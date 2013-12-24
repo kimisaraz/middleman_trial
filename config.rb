@@ -31,6 +31,8 @@ end
 
 page "/feed.xml", layout: false
 
+set :relative_links, true
+
 ###
 # Compass
 ###
