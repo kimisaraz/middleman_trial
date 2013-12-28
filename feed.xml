@@ -4,7 +4,7 @@
   <subtitle>Building a blog with Middleman</subtitle>
   <id>http://kimisaraz.github.io/blog</id>
   <link href="http://kimisaraz.github.io/blog"/>
-  <link href="http://kimisaraz.github.io/feed.xml" rel="self"/>
+  <link href="http://kimisaraz.github.io/middleman_trial/feed.xml" rel="self"/>
   <updated>2012-01-01T00:00:00Z</updated>
   <author>
     <name>Kimi SARAZU</name>
