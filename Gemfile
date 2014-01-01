@@ -12,3 +12,6 @@ gem "builder", "~> 3.0"
 
 # For article summaries
 gem "nokogiri"
+
+# For GitHub Flavored Markdown (GFM)
+gem "redcarpet"
