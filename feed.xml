@@ -5,16 +5,144 @@
   <id>http://kimisaraz.github.io/blog</id>
   <link href="http://kimisaraz.github.io/blog"/>
   <link href="http://kimisaraz.github.io/middleman_trial/feed.xml" rel="self"/>
-  <updated>2013-12-30T00:23:00Z</updated>
+  <updated>2014-01-01T01:47:00Z</updated>
   <author>
     <name>Kimi SARAZU</name>
   </author>
+  <entry>
+    <title>Markdown Example</title>
+    <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/"/>
+    <id>http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/</id>
+    <published>2014-01-01T01:47:00Z</published>
+    <updated>2014-01-01T21:15:48+09:00</updated>
+    <author>
+      <name>Kimi SARAZU</name>
+    </author>
+    <content type="html">&lt;p&gt;An article for confirmation of Markdown processing.&lt;/p&gt;
+
+
+
+&lt;h4 id="toc_0"&gt;Texts&lt;/h4&gt;
+
+&lt;p&gt;&amp;quot;Lorem ipsum&amp;quot; dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;a href="footnotes_example"&gt;^1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;br&gt;
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;h4 id="toc_1"&gt;Lists&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Item&lt;/li&gt;
+&lt;li&gt;Item
+
+&lt;ol&gt;
+&lt;li&gt;Sub Item&lt;/li&gt;
+&lt;li&gt;Sub Item&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;Item
+
+&lt;ul&gt;
+&lt;li&gt;Sub Item&lt;/li&gt;
+&lt;li&gt;Sub Item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item with
+newline and indent&lt;/li&gt;
+&lt;li&gt;Item with
+newline&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="toc_2"&gt;Links&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inline link: &lt;a href="http://kimisaraz.github.io/middleman_trial/"&gt;Middleman Trial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reference link: &lt;a title="Middleman Trial" href="http://kimisaraz.github.io/middleman_trial/"&gt;Middleman Trial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Normal link (in &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;): &lt;a href="http://kimisaraz.github.io/middleman_trial/"&gt;http://kimisaraz.github.io/middleman_trial/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Auto link: &lt;a href="http://kimisaraz.github.io/middleman_trial/"&gt;http://kimisaraz.github.io/middleman_trial/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wiki link: [[WikiLink]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="toc_3"&gt;Tables&lt;/h4&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;left-align&lt;/th&gt;
+&lt;th align="center"&gt;center-align&lt;/th&gt;
+&lt;th align="right"&gt;right-align&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;1111&lt;/td&gt;
+&lt;td align="center"&gt;2222&lt;/td&gt;
+&lt;td align="right"&gt;3333&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;4444&lt;/td&gt;
+&lt;td align="center"&gt;5555&lt;/td&gt;
+&lt;td align="right"&gt;6666&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;7777&lt;/td&gt;
+&lt;td align="center"&gt;8888&lt;/td&gt;
+&lt;td align="right"&gt;9999&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h4 id="toc_4"&gt;Styles&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;normal&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;emphasis text with one asterisk&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;emphasis text with two asterisks&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inline code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;emphasis_inside_of_text&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;strikethrough text&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;mark&gt;hightlight text&lt;/mark&gt;&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;underscored emphasis text&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;superscript 2^(nd)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id="toc_5"&gt;Blockquotes&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;blockquote&lt;br&gt;
+blockquote&lt;br&gt;
+blockquote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id="toc_6"&gt;Code Blocks&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;# Code blocks delimited with &amp;quot;```&amp;quot;
+def hello(message)
+  puts &amp;quot;Hello, #{message}&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;# Code blocks delimited with &amp;quot;~~~&amp;quot; style
+def hello(message)
+  puts &amp;quot;Hello, #{message}&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;# Code blocks indented with 4 spaces
+def hello(message)
+  puts &amp;quot;Hello, #{message}&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr&gt;
+</content>
+  </entry>
   <entry>
     <title>Dummy</title>
     <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2013/12/30/dummy/"/>
     <id>http://kimisaraz.github.io/middleman_trial/blog/2013/12/30/dummy/</id>
     <published>2013-12-30T00:23:00Z</published>
-    <updated>2014-01-01T01:10:43+09:00</updated>
+    <updated>2014-01-01T01:29:12+09:00</updated>
     <author>
       <name>Kimi SARAZU</name>
     </author>
@@ -22,8 +150,8 @@
 
 
 
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;br&gt;
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </content>
   </entry>
@@ -32,7 +160,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2013/12/29/lorem-ipsum/"/>
     <id>http://kimisaraz.github.io/middleman_trial/blog/2013/12/29/lorem-ipsum/</id>
     <published>2013-12-29T09:18:00Z</published>
-    <updated>2014-01-01T01:10:43+09:00</updated>
+    <updated>2014-01-01T01:29:12+09:00</updated>
     <author>
       <name>Kimi SARAZU</name>
     </author>
@@ -40,8 +168,8 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 
 
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;br&gt;
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </content>
   </entry>
