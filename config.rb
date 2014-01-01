@@ -127,3 +127,29 @@ end
 # Use pretty URLs
 activate :directory_indexes
 # page "/tags/*", :directory_index => false
+
+# Markdown
+# https://github.com/vmg/redcarpet/blob/master/README.markdown
+set :markdown_engine, :redcarpet
+set :markdown, {
+  # Code blocks
+  fenced_code_blocks: true, # Parse fenced code blocks, PHP-Markdown style, same as GFM
+  gh_blockcode: true, # Generate safer HTML for code blocks (no custom CSS classes)
+  # disable_indented_code_blocks: false, # Do not parse usual markdown code blocks
+  # Tables
+  tables: true, # Parse tables, PHP-Markdown style, same as GFM
+  # Others
+  hard_wrap: true, # Treat newlines in paragraphs as real line breaks, same as GFM
+  no_intra_emphasis: true, # Do not parse emphasis_inside_of_words, same as GFM
+  strikethrough: true, # Parse ~~strikethrough~~, PHP-Markdown style, same as GFM
+  autolink: true, # Parse links even when they are not enclosed in <> characters, same as GFM
+  highlight: true, # Parse ==highlights==
+  underline: true, # Parse _underscored emphasis_ as underlines
+  # footnotes: false, # Parse footnotes, PHP-Markdown style
+  # superscript: false, # Parse superscripts after the ^ character
+  # quote: false, # Parse "quotes" to <q>quote</q>
+  # space_after_headers: false, # A space is required between the hash and header, same as GFM?
+  # lax_spacing: false, # HTML blocks do not require to be surrounded by an empty line, same as GFM?
+  # smartypants: false, # Enable SmartyPants, see http://daringfireball.net/projects/smartypants/
+  with_toc_data: true # Add HTML anchors to each header in the output HTML
+}
