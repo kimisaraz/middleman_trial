@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/"/>
     <id>http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/</id>
     <published>2014-01-01T01:47:00Z</published>
-    <updated>2014-01-01T21:15:48+09:00</updated>
+    <updated>2014-01-02T22:26:19+09:00</updated>
     <author>
       <name>Kimi SARAZU</name>
     </author>
@@ -22,15 +22,15 @@
 
 
 
-&lt;h4 id="toc_0"&gt;Texts&lt;/h4&gt;
+&lt;h3 id="toc_0"&gt;Texts&lt;/h3&gt;
 
 &lt;p&gt;&amp;quot;Lorem ipsum&amp;quot; dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;a href="footnotes_example"&gt;^1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;br&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
-&lt;h4 id="toc_1"&gt;Lists&lt;/h4&gt;
+&lt;h3 id="toc_1"&gt;Lists&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Item&lt;/li&gt;
@@ -56,7 +56,7 @@ newline and indent&lt;/li&gt;
 newline&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id="toc_2"&gt;Links&lt;/h4&gt;
+&lt;h3 id="toc_2"&gt;Links&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Inline link: &lt;a href="http://kimisaraz.github.io/middleman_trial/"&gt;Middleman Trial&lt;/a&gt;&lt;/li&gt;
@@ -66,7 +66,7 @@ newline&lt;/li&gt;
 &lt;li&gt;Wiki link: [[WikiLink]]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id="toc_3"&gt;Tables&lt;/h4&gt;
+&lt;h3 id="toc_3"&gt;Tables&lt;/h3&gt;
 
 &lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
@@ -92,7 +92,7 @@ newline&lt;/li&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 
-&lt;h4 id="toc_4"&gt;Styles&lt;/h4&gt;
+&lt;h3 id="toc_4"&gt;Styles&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;normal&lt;/li&gt;
@@ -106,15 +106,15 @@ newline&lt;/li&gt;
 &lt;li&gt;superscript 2^(nd)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id="toc_5"&gt;Blockquotes&lt;/h5&gt;
+&lt;h4 id="toc_5"&gt;Blockquotes&lt;/h4&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;blockquote&lt;br&gt;
-blockquote&lt;br&gt;
+&lt;p&gt;blockquote
+blockquote
 blockquote&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h5 id="toc_6"&gt;Code Blocks&lt;/h5&gt;
+&lt;h4 id="toc_6"&gt;Code Blocks&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class="ruby"&gt;# Code blocks delimited with &amp;quot;```&amp;quot;
 def hello(message)
@@ -135,6 +135,24 @@ end
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr&gt;
+
+&lt;h3 id="toc_7"&gt;Non Space Header&lt;/h3&gt;
+
+&lt;p&gt;There is no space between the hash at the beginning of a header above and its name.&lt;/p&gt;
+
+&lt;h3 id="toc_8"&gt;Lax Spacing&lt;/h3&gt;
+
+&lt;p&gt;Text without empty line after.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;
+    HTML blocks do not require to be surrounded by an empty line
+  &lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Text without empty line before.&lt;/p&gt;
+
+&lt;hr&gt;
 </content>
   </entry>
   <entry>
@@ -150,8 +168,8 @@ end
 
 
 
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;br&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </content>
   </entry>
@@ -168,8 +186,8 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 
 
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;br&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </content>
   </entry>
