@@ -8,7 +8,7 @@ An article for confirmation of Markdown processing.
 
 <!-- READ_MORE -->
 
-#### Texts ####
+### Texts ###
 
 "Lorem ipsum" dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[^1]
 
@@ -16,7 +16,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-#### Lists ####
+### Lists ###
 
 1. Item
 2. Item
@@ -32,7 +32,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 - Item with
 newline
 
-#### Links ####
+### Links ###
 
 - Inline link: [Middleman Trial](http://kimisaraz.github.io/middleman_trial/)
 - Reference link: [Middleman Trial][middleman_trial]
@@ -42,7 +42,7 @@ newline
 
 [middleman_trial]: http://kimisaraz.github.io/middleman_trial/ "Middleman Trial"
 
-#### Tables ####
+### Tables ###
 
 left-align | center-align | right-align
 :----------| :----------: | ----------:
@@ -50,7 +50,7 @@ left-align | center-align | right-align
 4444       | 5555         | 6666
 7777       | 8888         | 9999
 
-#### Styles ####
+### Styles ###
 
 - normal
 - *emphasis text with one asterisk*
@@ -62,13 +62,13 @@ left-align | center-align | right-align
 - _underscored emphasis text_
 - superscript 2^(nd)
 
-##### Blockquotes #####
+#### Blockquotes ####
 
 > blockquote
 > blockquote
 > blockquote
 
-##### Code Blocks #####
+#### Code Blocks ####
 
 ```ruby
 # Code blocks delimited with "```"
@@ -88,7 +88,23 @@ end
     def hello(message)
       puts "Hello, #{message}"
     end
-    
+
+-------------------------------------------------------------------------------
+
+###Non Space Header
+
+There is no space between the hash at the beginning of a header above and its name.
+
+### Lax Spacing ###
+
+Text without empty line after.
+<div>
+  <pre>
+    HTML blocks do not require to be surrounded by an empty line
+  </pre>
+</div>
+Text without empty line before.
+
 -------------------------------------------------------------------------------
 
 [^1]: footnotes_example
