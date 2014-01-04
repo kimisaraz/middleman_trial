@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/"/>
     <id>http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/</id>
     <published>2014-01-01T01:47:00Z</published>
-    <updated>2014-01-02T22:26:19+09:00</updated>
+    <updated>2014-01-03T22:56:09+09:00</updated>
     <author>
       <name>Kimi SARAZU</name>
     </author>
@@ -115,25 +115,19 @@ blockquote&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h4 id="toc_6"&gt;Code Blocks&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class="ruby"&gt;# Code blocks delimited with &amp;quot;```&amp;quot;
+&lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with &amp;quot;```&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello, &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with &amp;quot;~~~&amp;quot; style&lt;/span&gt;
+&lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello, &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="highlight text"&gt;# Code blocks indented with 4 spaces
 def hello(message)
   puts &amp;quot;Hello, #{message}&amp;quot;
 end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class="ruby"&gt;# Code blocks delimited with &amp;quot;~~~&amp;quot; style
-def hello(message)
-  puts &amp;quot;Hello, #{message}&amp;quot;
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;# Code blocks indented with 4 spaces
-def hello(message)
-  puts &amp;quot;Hello, #{message}&amp;quot;
-end
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;/pre&gt;
 &lt;hr&gt;
 
 &lt;h3 id="toc_7"&gt;Non Space Header&lt;/h3&gt;
