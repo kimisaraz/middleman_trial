@@ -153,3 +153,9 @@ set :markdown, {
   # quote: true, # Parse "quotes" to <q>quote</q>
   # smartypants: true, # Enable SmartyPants, see http://daringfireball.net/projects/smartypants/
 }
+
+# Syntax highlighting
+# https://github.com/middleman/middleman-syntax
+activate :syntax, {
+  # :line_numbers => true
+}
