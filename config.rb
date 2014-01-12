@@ -162,5 +162,6 @@ activate :syntax, {
 
 # Haml
 set :haml, {
+  ugly: true,
   format: :html5,
 }
