@@ -16,3 +16,8 @@ gem "nokogiri"
 
 # For GitHub Flavored Markdown (GFM)
 gem "redcarpet"
+
+group :development do
+  # To convert ERB to Haml
+  gem "html2haml"
+end

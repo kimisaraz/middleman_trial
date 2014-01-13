@@ -159,3 +159,9 @@ set :markdown, {
 activate :syntax, {
   # :line_numbers => true
 }
+
+# Haml
+set :haml, {
+  ugly: true,
+  format: :html5,
+}
