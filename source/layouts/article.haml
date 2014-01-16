@@ -4,4 +4,10 @@
       %header
         %h1
           = current_article.title
+        %dl.meta
+          %dt.meta_title
+            Published:
+          %dd
+            %time{datetime: "#{current_article.date.xmlschema}"}
+              = current_article.date.strftime('%F')
     = yield
