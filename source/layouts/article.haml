@@ -19,3 +19,14 @@
             - else
               None
     = yield
+    - if is_blog_article?
+      %footer
+        %nav
+          - previous_article = current_article.previous_article
+          - if previous_article
+            .previous_article
+              = link_to "&laquo; #{previous_article.title}", previous_article
+          - next_article = current_article.next_article
+          - if next_article
+            .next_article
+              = link_to "#{next_article.title} &raquo;", next_article
