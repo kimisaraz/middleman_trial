@@ -10,4 +10,12 @@
           %dd
             %time{datetime: "#{current_article.date.xmlschema}"}
               = current_article.date.strftime('%F')
+          %dt.meta_title
+            Tags:
+          %dd
+            - unless current_article.tags.empty?
+              - current_article.tags.each do |tag|
+                = link_to tag, tag_path(tag)
+            - else
+              None
     = yield
