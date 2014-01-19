@@ -18,7 +18,8 @@
                 = link_to tag, tag_path(tag)
             - else
               None
-    = yield
+    .article_body
+      = yield
     - if is_blog_article?
       %footer
         %nav
