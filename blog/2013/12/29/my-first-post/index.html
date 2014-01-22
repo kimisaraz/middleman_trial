@@ -11,9 +11,9 @@ Blog Title - My First Post
 </head>
 <body>
 <div id='main' role='main'>
-<article>
+<article itemscope='' itemtype='http://schema.org/BlogPosting'>
 <header>
-<h1>
+<h1 itemprop='name headline'>
 My First Post
 </h1>
 <dl class='meta'>
@@ -21,7 +21,7 @@ My First Post
 Published:
 </dt>
 <dd>
-<time datetime='2013-12-29T04:07:00+09:00'>
+<time datetime='2013-12-29T04:07:00+09:00' itemprop='datePublished'>
 2013-12-29
 </time>
 </dd>
@@ -29,21 +29,23 @@ Published:
 Tags:
 </dt>
 <dd>
-<a href="/middleman_trial/blog/tags/hello/">hello</a>
+<span itemprop='keywords'>
+<a rel="tag" href="/middleman_trial/blog/tags/hello/">hello</a>
+</span>
 </dd>
 </dl>
 </header>
-<div class='article_body'>
+<div class='article_body' itemprop='articleBody'>
 <p>Hello, world!</p>
 
 </div>
 <footer>
 <nav>
 <div class='previous_article'>
-<a href="/middleman_trial/blog/2012/01/01/example-article/">&laquo; Example Article</a>
+<a rel="prev" href="/middleman_trial/blog/2012/01/01/example-article/">&laquo; Example Article</a>
 </div>
 <div class='next_article'>
-<a href="/middleman_trial/blog/2013/12/29/tokyo-time-zone/">Tokyo Time Zone &raquo;</a>
+<a rel="next" href="/middleman_trial/blog/2013/12/29/tokyo-time-zone/">Tokyo Time Zone &raquo;</a>
 </div>
 </nav>
 </footer>

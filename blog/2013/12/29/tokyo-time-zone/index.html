@@ -11,9 +11,9 @@ Blog Title - Tokyo Time Zone
 </head>
 <body>
 <div id='main' role='main'>
-<article>
+<article itemscope='' itemtype='http://schema.org/BlogPosting'>
 <header>
-<h1>
+<h1 itemprop='name headline'>
 Tokyo Time Zone
 </h1>
 <dl class='meta'>
@@ -21,7 +21,7 @@ Tokyo Time Zone
 Published:
 </dt>
 <dd>
-<time datetime='2013-12-29T04:42:00+09:00'>
+<time datetime='2013-12-29T04:42:00+09:00' itemprop='datePublished'>
 2013-12-29
 </time>
 </dd>
@@ -29,21 +29,23 @@ Published:
 Tags:
 </dt>
 <dd>
-<a href="/middleman_trial/blog/tags/hello/">hello</a>
+<span itemprop='keywords'>
+<a rel="tag" href="/middleman_trial/blog/tags/hello/">hello</a>
+</span>
 </dd>
 </dl>
 </header>
-<div class='article_body'>
+<div class='article_body' itemprop='articleBody'>
 <p>Hello, Tokyo!</p>
 
 </div>
 <footer>
 <nav>
 <div class='previous_article'>
-<a href="/middleman_trial/blog/2013/12/29/my-first-post/">&laquo; My First Post</a>
+<a rel="prev" href="/middleman_trial/blog/2013/12/29/my-first-post/">&laquo; My First Post</a>
 </div>
 <div class='next_article'>
-<a href="/middleman_trial/blog/2013/12/29/lorem-ipsum/">Lorem Ipsum &raquo;</a>
+<a rel="next" href="/middleman_trial/blog/2013/12/29/lorem-ipsum/">Lorem Ipsum &raquo;</a>
 </div>
 </nav>
 </footer>

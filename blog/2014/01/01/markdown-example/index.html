@@ -11,9 +11,9 @@ Blog Title - Markdown Example
 </head>
 <body>
 <div id='main' role='main'>
-<article>
+<article itemscope='' itemtype='http://schema.org/BlogPosting'>
 <header>
-<h1>
+<h1 itemprop='name headline'>
 Markdown Example
 </h1>
 <dl class='meta'>
@@ -21,7 +21,7 @@ Markdown Example
 Published:
 </dt>
 <dd>
-<time datetime='2014-01-01T10:47:00+09:00'>
+<time datetime='2014-01-01T10:47:00+09:00' itemprop='datePublished'>
 2014-01-01
 </time>
 </dd>
@@ -33,7 +33,7 @@ None
 </dd>
 </dl>
 </header>
-<div class='article_body'>
+<div class='article_body' itemprop='articleBody'>
 <p>An article for confirmation of Markdown processing.</p>
 
 
@@ -168,7 +168,7 @@ end
 <footer>
 <nav>
 <div class='previous_article'>
-<a href="/middleman_trial/blog/2013/12/30/dummy/">&laquo; Dummy</a>
+<a rel="prev" href="/middleman_trial/blog/2013/12/30/dummy/">&laquo; Dummy</a>
 </div>
 </nav>
 </footer>

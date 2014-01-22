@@ -11,9 +11,9 @@ Blog Title - Example Article
 </head>
 <body>
 <div id='main' role='main'>
-<article>
+<article itemscope='' itemtype='http://schema.org/BlogPosting'>
 <header>
-<h1>
+<h1 itemprop='name headline'>
 Example Article
 </h1>
 <dl class='meta'>
@@ -21,7 +21,7 @@ Example Article
 Published:
 </dt>
 <dd>
-<time datetime='2012-01-01T00:00:00+09:00'>
+<time datetime='2012-01-01T00:00:00+09:00' itemprop='datePublished'>
 2012-01-01
 </time>
 </dd>
@@ -29,18 +29,20 @@ Published:
 Tags:
 </dt>
 <dd>
-<a href="/middleman_trial/blog/tags/example/">example</a>
+<span itemprop='keywords'>
+<a rel="tag" href="/middleman_trial/blog/tags/example/">example</a>
+</span>
 </dd>
 </dl>
 </header>
-<div class='article_body'>
+<div class='article_body' itemprop='articleBody'>
 <p>This is an example article. You probably want to delete it and write your own articles!</p>
 
 </div>
 <footer>
 <nav>
 <div class='next_article'>
-<a href="/middleman_trial/blog/2013/12/29/my-first-post/">My First Post &raquo;</a>
+<a rel="next" href="/middleman_trial/blog/2013/12/29/my-first-post/">My First Post &raquo;</a>
 </div>
 </nav>
 </footer>
