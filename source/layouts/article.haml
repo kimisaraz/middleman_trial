@@ -1,0 +1,34 @@
+- wrap_layout :layout do
+  %article{itemscope: '', itemtype: "http://schema.org/BlogPosting"}
+    - if is_blog_article?
+      %header
+        %h1{itemprop: "name headline"}
+          = current_article.title
+        %dl.meta
+          %dt.meta_title
+            Published:
+          %dd
+            %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
+              = current_article.date.strftime('%F')
+          %dt.meta_title
+            Tags:
+          %dd
+            - unless current_article.tags.empty?
+              %span{itemprop: "keywords"}
+                - current_article.tags.each do |tag|
+                  = link_to tag, tag_path(tag), rel: "tag"
+            - else
+              None
+    .article_body{itemprop: "articleBody"}
+      = yield
+    - if is_blog_article?
+      %footer
+        %nav
+          - previous_article = current_article.previous_article
+          - if previous_article
+            .previous_article
+              = link_to "&laquo; #{previous_article.title}", previous_article, rel: "prev"
+          - next_article = current_article.next_article
+          - if next_article
+            .next_article
+              = link_to "#{next_article.title} &raquo;", next_article, rel: "next"
