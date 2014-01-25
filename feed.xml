@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Middleman Trial</title>
   <subtitle>Building a blog with Middleman</subtitle>
-  <id>http://kimisaraz.github.io/blog</id>
-  <link href="http://kimisaraz.github.io/blog"/>
+  <id>http://kimisaraz.github.io/middleman_trial/blog</id>
+  <link href="http://kimisaraz.github.io/middleman_trial/blog"/>
   <link href="http://kimisaraz.github.io/middleman_trial/feed.xml" rel="self"/>
   <updated>2014-01-01T01:47:00Z</updated>
   <author>
