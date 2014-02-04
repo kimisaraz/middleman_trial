@@ -13,7 +13,7 @@
         = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
     #main{role: "main"}
       = yield
-    %aside
+    %aside{role: "complementary"}
       %h2 Recent Articles
       %ol
         - blog.articles[0...10].each do |article|
