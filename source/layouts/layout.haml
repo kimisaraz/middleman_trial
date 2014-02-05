@@ -5,7 +5,7 @@
     %meta{content: "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}
     %title
       Middleman Trial#{' - ' + current_article.title unless current_article.nil?}
-    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = feed_tag :atom, File.join(config.http_prefix, "feed.xml"), title: "Atom Feed"
     = stylesheet_link_tag "syntax"
   %body
     %header{role: "banner"}
