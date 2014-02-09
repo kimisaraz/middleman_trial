@@ -1,7 +1,7 @@
 ---
 title: Markdown Example
 date: 2014-01-01 10:47 JST
-tags:
+tags: example, markdown
 ---
 
 An article for confirmation of Markdown processing.
