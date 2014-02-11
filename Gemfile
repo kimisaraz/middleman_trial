@@ -17,6 +17,9 @@ gem "nokogiri"
 # For GitHub Flavored Markdown (GFM)
 gem "redcarpet"
 
+# To provide the Font Awesome as a Middleman engine
+gem "font-awesome-middleman"
+
 group :development do
   # To convert ERB to Haml
   gem "html2haml"
