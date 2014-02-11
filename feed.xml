@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/"/>
     <id>http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/</id>
     <published>2014-01-01T01:47:00Z</published>
-    <updated>2014-02-09T22:56:59+09:00</updated>
+    <updated>2014-02-11T13:32:44+09:00</updated>
     <author>
       <name>Kimi SARAZU</name>
     </author>
@@ -116,10 +116,10 @@ blockquote&lt;/p&gt;
 
 &lt;h3 id="toc_6"&gt;Images&lt;/h3&gt;
 
-&lt;p&gt;&lt;img title="Middleman logo" alt="Middleman" src="/middleman_trial/images/middleman.png" /&gt;
-&lt;img title="Middleman logo" alt="Middleman" src="/middleman_trial/images/middleman.png" /&gt;
-&lt;a title="Middleman guide" href="http://middlemanapp.com"&gt;&lt;img alt="Middleman" src="/middleman_trial/images/middleman.png" /&gt;&lt;/a&gt;
-&lt;a title="Middleman guide" href="http://middlemanapp.com"&gt;&lt;img title="Middleman logo" alt="Middleman" src="/middleman_trial/images/middleman.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Middleman logo" alt="Inline image syntax with optional title" src="/middleman_trial/images/middleman.png" /&gt;
+&lt;img title="Middleman logo" alt="Reference-style image syntax" src="/middleman_trial/images/middleman.png" /&gt;
+&lt;img alt="Image in subfolder" src="/middleman_trial/images/logos/middleman.png" /&gt;
+&lt;a title="Middleman guide" href="http://middlemanapp.com"&gt;&lt;img alt="Image with link" src="/middleman_trial/images/middleman.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id="toc_7"&gt;Code Blocks&lt;/h3&gt;
 &lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with "```"&lt;/span&gt;
