@@ -70,12 +70,12 @@ left-align | center-align | right-align
 
 ### Images ###
 
-![Middleman](middleman.png "Middleman logo")
-![Middleman][middleman logo]
-[![Middleman](middleman.png)](http://middlemanapp.com "Middleman guide")
-[![Middleman][middleman logo]](http://middlemanapp.com "Middleman guide")
+![Inline image syntax with optional title](middleman.png "Middleman logo")
+![Reference-style image syntax][middleman logo]
+![Image in subfolder](logos/middleman.png)
+[![Image with link](middleman.png)](http://middlemanapp.com "Middleman guide")
 
-[middleman logo]: images/middleman.png "Middleman logo"
+[middleman logo]: middleman.png "Middleman logo"
 
 ### Code Blocks ###
 
