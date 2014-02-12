@@ -6,11 +6,13 @@
           = current_article.title
         %dl.meta
           %dt.meta_title
+            %i.fa.fa-clock-o.fa-fw
             Published:
           %dd
             %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
               = current_article.date.strftime('%F')
           %dt.meta_title
+            %i.fa.fa-tag.fa-fw
             Tags:
           %dd
             - unless current_article.tags.empty?
