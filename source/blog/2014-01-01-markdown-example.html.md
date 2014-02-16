@@ -6,7 +6,7 @@ tags: example, markdown
 
 An article for confirmation of Markdown processing.
 
-<!-- READ_MORE -->
+<!-- READMORE -->
 
 ## Texts ##
 
