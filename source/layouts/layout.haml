@@ -7,7 +7,6 @@
       Middleman Trial#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, File.join(config.http_prefix, "feed.xml"), title: "Atom Feed"
     = stylesheet_link_tag "main"
-    = stylesheet_link_tag "syntax"
   %body
     %header{role: "banner"}
       %h1
