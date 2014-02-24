@@ -15,31 +15,32 @@
       = javascript_include_tag "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
       = javascript_include_tag "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
   %body
-    %header{role: "banner"}
-      %h1
-        = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
-    #main{role: "main"}
-      = yield
-    %aside{role: "complementary"}
-      %h2 Recent Articles
-      %ol
-        - blog.articles[0...10].each do |article|
-          %li
-            = link_to article.title, article
-            %span= article.date.strftime('%b %e')
-      %h2 Tags
-      %ol
-        - blog.tags.each do |tag, articles|
-          %li
-            = link_to "#{tag} (#{articles.size})", tag_path(tag)
-      %h2 By Year
-      %ol
-        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-          %li
-            = link_to "#{year} (#{articles.size})", blog_year_path(year)
-    %footer{role: "contentinfo"}
-      Copyright &copy; 2014 -
-      = link_to "kimisaraz", "https://github.com/kimisaraz"
+    .container
+      %header{role: "banner"}
+        %h1
+          = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
+      #main{role: "main"}
+        = yield
+      %aside{role: "complementary"}
+        %h2 Recent Articles
+        %ol
+          - blog.articles[0...10].each do |article|
+            %li
+              = link_to article.title, article
+              %span= article.date.strftime('%b %e')
+        %h2 Tags
+        %ol
+          - blog.tags.each do |tag, articles|
+            %li
+              = link_to "#{tag} (#{articles.size})", tag_path(tag)
+        %h2 By Year
+        %ol
+          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+            %li
+              = link_to "#{year} (#{articles.size})", blog_year_path(year)
+      %footer{role: "contentinfo"}
+        Copyright &copy; 2014 -
+        = link_to "kimisaraz", "https://github.com/kimisaraz"
 
     -# jQuery (necessary for Bootstrap's JavaScript plugins)
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
