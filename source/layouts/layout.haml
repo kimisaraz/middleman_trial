@@ -19,25 +19,26 @@
       %header{role: "banner"}
         %h1
           = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
-      #main{role: "main"}
-        = yield
-      %aside{role: "complementary"}
-        %h2 Recent Articles
-        %ol
-          - blog.articles[0...10].each do |article|
-            %li
-              = link_to article.title, article
-              %span= article.date.strftime('%b %e')
-        %h2 Tags
-        %ol
-          - blog.tags.each do |tag, articles|
-            %li
-              = link_to "#{tag} (#{articles.size})", tag_path(tag)
-        %h2 By Year
-        %ol
-          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-            %li
-              = link_to "#{year} (#{articles.size})", blog_year_path(year)
+      .row
+        #main.col-md-9{role: "main"}
+          = yield
+        %aside.col-md-3{role: "complementary"}
+          %h2 Recent Articles
+          %ol
+            - blog.articles[0...10].each do |article|
+              %li
+                = link_to article.title, article
+                %span= article.date.strftime('%b %e')
+          %h2 Tags
+          %ol
+            - blog.tags.each do |tag, articles|
+              %li
+                = link_to "#{tag} (#{articles.size})", tag_path(tag)
+          %h2 By Year
+          %ol
+            - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+              %li
+                = link_to "#{year} (#{articles.size})", blog_year_path(year)
       %footer{role: "contentinfo"}
         Copyright &copy; 2014 -
         = link_to "kimisaraz", "https://github.com/kimisaraz"
