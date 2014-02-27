@@ -2847,3 +2847,5 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .fa-turkish-lira:before, .fa-try:before { content: "\f195"; }
 
 .fa-plus-square-o:before { content: "\f196"; }
+
+.blog-footer { margin: 20px -15px 0 -15px; padding: 30px 15px; color: #999; border-top: 1px solid #e5e5e5; }
