@@ -18,7 +18,7 @@
             - unless current_article.tags.empty?
               %span{itemprop: "keywords"}
                 - current_article.tags.each do |tag|
-                  = link_to tag, tag_path(tag), rel: "tag"
+                  = link_to tag, tag_path(tag), rel: "tag", class: "label label-default"
             - else
               None
     .article_body{itemprop: "articleBody"}
