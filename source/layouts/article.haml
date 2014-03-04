@@ -4,23 +4,12 @@
       %header
         %h1{itemprop: "name headline"}
           = current_article.title
-        %dl.meta
-          %dt.meta_title
-            %i.fa.fa-clock-o.fa-fw
-            Published:
-          %dd
-            %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
-              = current_article.date.strftime('%F')
-          %dt.meta_title
-            %i.fa.fa-tag.fa-fw
-            Tags:
-          %dd
-            - unless current_article.tags.empty?
-              %span{itemprop: "keywords"}
-                - current_article.tags.each do |tag|
-                  = link_to tag, tag_path(tag), rel: "tag", class: "label label-default"
-            - else
-              None
+        .meta
+          %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
+            = current_article.date.strftime('%F')
+          %span.tags{itemprop: "keywords"}
+            - current_article.tags.each do |tag|
+              = link_to tag, tag_path(tag), rel: "tag", class: "label label-default"
     .article_body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?
