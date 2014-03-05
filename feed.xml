@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/"/>
     <id>http://kimisaraz.github.io/middleman_trial/blog/2014/01/01/markdown-example/</id>
     <published>2014-01-01T01:47:00Z</published>
-    <updated>2014-02-16T18:43:27+09:00</updated>
+    <updated>2014-03-06T07:50:49+09:00</updated>
     <author>
       <name>Kimi SARAZU</name>
     </author>
@@ -68,6 +68,8 @@ newline&lt;/li&gt;
 
 &lt;h2 id="toc_3"&gt;Tables&lt;/h2&gt;
 
+&lt;p&gt;Normal table&lt;/p&gt;
+
 &lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;left-align&lt;/th&gt;
@@ -89,6 +91,32 @@ newline&lt;/li&gt;
 &lt;td align="left"&gt;7777&lt;/td&gt;
 &lt;td align="center"&gt;8888&lt;/td&gt;
 &lt;td align="right"&gt;9999&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;Wide table&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Lorem ipsum dolor sit amet&lt;/th&gt;
+&lt;th&gt;consectetur adipisicing elit&lt;/th&gt;
+&lt;th&gt;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet&lt;/td&gt;
+&lt;td&gt;consectetur adipisicing elit&lt;/td&gt;
+&lt;td&gt;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet&lt;/td&gt;
+&lt;td&gt;consectetur adipisicing elit&lt;/td&gt;
+&lt;td&gt;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet&lt;/td&gt;
+&lt;td&gt;consectetur adipisicing elit&lt;/td&gt;
+&lt;td&gt;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 
@@ -121,6 +149,8 @@ blockquote&lt;/p&gt;
 &lt;img alt="Image in subfolder" src="/middleman_trial/images/logos/middleman.png" /&gt;
 &lt;a title="Middleman guide" href="http://middlemanapp.com"&gt;&lt;img alt="Image with link" src="/middleman_trial/images/middleman.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;img title="Wide Image" alt="Wide image" src="/middleman_trial/images/emacs-scratch.png" /&gt;&lt;/p&gt;
+
 &lt;h3 id="toc_7"&gt;Code Blocks&lt;/h3&gt;
 &lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with "```"&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -152,8 +182,6 @@ end
 &lt;/div&gt;
 
 &lt;p&gt;Text without empty line before.&lt;/p&gt;
-
-&lt;hr&gt;
 </content>
   </entry>
   <entry>
