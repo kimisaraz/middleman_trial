@@ -44,11 +44,22 @@ newline
 
 ## Tables ##
 
+Normal table
+
 left-align | center-align | right-align
-:----------| :----------: | ----------:
+:--------- | :----------: | ----------:
 1111       | 2222         | 3333
 4444       | 5555         | 6666
 7777       | 8888         | 9999
+
+
+Wide table
+
+Lorem ipsum dolor sit amet | consectetur adipisicing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+-------------------------- | ---------------------------- | -----------------------------------------------------------------
+Lorem ipsum dolor sit amet | consectetur adipisicing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+Lorem ipsum dolor sit amet | consectetur adipisicing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+Lorem ipsum dolor sit amet | consectetur adipisicing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
 ## Styles ##
 
@@ -76,6 +87,8 @@ left-align | center-align | right-align
 [![Image with link](middleman.png)](http://middlemanapp.com "Middleman guide")
 
 [middleman logo]: middleman.png "Middleman logo"
+
+![Wide image](emacs-scratch.png "Wide Image")
 
 ### Code Blocks ###
 
@@ -113,7 +126,5 @@ Text without empty line after.
   </pre>
 </div>
 Text without empty line before.
-
--------------------------------------------------------------------------------
 
 [^1]: footnotes_example
