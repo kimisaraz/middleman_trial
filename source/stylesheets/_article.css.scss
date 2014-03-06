@@ -4,3 +4,8 @@
   @extend .table-striped;
   // @extend .table-condensed;
 }
+
+.article_body img {
+  @extend .img-thumbnail;
+  // @extend .img-responsive;
+}
