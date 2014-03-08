@@ -291,7 +291,7 @@ cite { font-style: normal; }
 
 .text-justify { text-align: justify; }
 
-.text-muted { color: #999999; }
+.text-muted, .blog-footer { color: #999999; }
 
 .text-primary { color: #428bca; }
 
@@ -2853,4 +2853,4 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .blog-header a { color: white; }
 .blog-header a:hover, .blog-header a:focus { text-decoration: none; }
 
-.blog-footer { margin: 20px -15px 0 -15px; padding: 30px 15px; color: #999; border-top: 1px solid #e5e5e5; }
+.blog-footer { margin-top: 60px; padding-top: 30px; padding-bottom: 30px; border-top: 1px solid #eeeeee; }
