@@ -17,10 +17,9 @@
 }
 
 .blog-footer {
-  margin: 20px -15px 0 -15px;
-  padding: 30px 15px;
-  color: #999;
-  // text-align: center;
-  // background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
+  margin-top: $line-height-computed * 3;
+  padding-top: $padding-large-vertical * 3;
+  padding-bottom: $padding-large-vertical * 3;
+  border-top: 1px solid $gray-lighter;
+  @extend .text-muted;
 }
