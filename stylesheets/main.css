@@ -2848,4 +2848,8 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .fa-plus-square-o:before { content: "\f196"; }
 
+.blog-header { padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px; background-color: #428bca; }
+.blog-header a { color: #fff; }
+.blog-header a:hover, .blog-header a:focus { text-decoration: none; }
+
 .blog-footer { margin: 20px -15px 0 -15px; padding: 30px 15px; color: #999; border-top: 1px solid #e5e5e5; }
