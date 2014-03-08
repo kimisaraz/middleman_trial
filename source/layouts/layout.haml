@@ -15,10 +15,11 @@
       = javascript_include_tag "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
       = javascript_include_tag "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
   %body
-    .container
-      %header.page-header{role: "banner"}
+    %header.blog-header{role: "banner"}
+      .container
         %h1
           = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
+    .container
       .row
         #main.col-md-9{role: "main"}
           = yield
