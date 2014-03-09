@@ -1,11 +1,12 @@
-.article_body table {
-  @extend .table;
-  @extend .table-bordered;
-  @extend .table-striped;
-  // @extend .table-condensed;
-}
-
-.article_body img {
-  @extend .img-thumbnail;
-  // @extend .img-responsive;
+.article_body {
+  table {
+    @extend .table;
+    @extend .table-bordered;
+    @extend .table-striped;
+    // @extend .table-condensed;
+  }
+  img {
+    @extend .img-thumbnail;
+    // @extend .img-responsive;
+  }
 }
