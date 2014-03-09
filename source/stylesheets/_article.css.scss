@@ -9,4 +9,8 @@
     @extend .img-thumbnail;
     // @extend .img-responsive;
   }
+  $article-body-heading-top-level: 2;
+  h#{$article-body-heading-top-level} {
+    @extend .page-header;
+  }
 }
