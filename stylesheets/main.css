@@ -335,7 +335,7 @@ a.bg-warning:hover { background-color: #f7ecb5; }
 
 a.bg-danger:hover { background-color: #e4b9b9; }
 
-.page-header { padding-bottom: 9px; margin: 40px 0 20px; border-bottom: 1px solid #eeeeee; }
+.page-header, .article_body h2 { padding-bottom: 9px; margin: 40px 0 20px; border-bottom: 1px solid #eeeeee; }
 
 ul, ol { margin-top: 0; margin-bottom: 10px; }
 ul ul, ul ol, ol ul, ol ol { margin-bottom: 0; }
@@ -2848,9 +2848,11 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .fa-plus-square-o:before { content: "\f196"; }
 
-.blog-header { margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; background-color: #2a6496; color: white; }
+.blog-header { margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; background-image: -webkit-linear-gradient(top, #1f496e 0%, #2a6496 100%); background-image: linear-gradient(to bottom, #1f496e 0%, #2a6496 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1F496E', endColorstr='#FF2A6496', GradientType=0); color: white; }
 .blog-header h1 { font-size: 50px; }
 .blog-header a { color: white; }
 .blog-header a:hover, .blog-header a:focus { text-decoration: none; }
 
 .blog-footer { margin-top: 60px; padding-top: 30px; padding-bottom: 30px; border-top: 1px solid #eeeeee; }
+
+.article-header { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eeeeee; }
