@@ -2,8 +2,7 @@
   margin-bottom: $line-height-computed;
   padding-top: $padding-large-vertical;
   padding-bottom: $padding-large-vertical;
-  background-color: darken($brand-primary, 15%);
-  // background-color: #b15da3;
+  @include gradient-vertical(darken($brand-primary, 25%), darken($brand-primary, 15%), 0%, 100%);
   color: $component-active-color;
   h1 {
     font-size: floor($font-size-base * 3.6);
