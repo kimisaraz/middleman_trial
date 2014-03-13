@@ -1,3 +1,18 @@
+.article-header {
+  margin-bottom: $line-height-computed;
+  padding-bottom: $padding-large-vertical;
+  border-bottom: 1px solid $gray-lighter;
+  .meta {
+    @extend .text-muted;
+    .tags {
+      a {
+        @extend .label;
+        @extend .label-default;
+      }
+    }
+  }
+}
+
 .article_body {
   table {
     @extend .table;

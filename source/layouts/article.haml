@@ -1,15 +1,17 @@
 - wrap_layout :layout do
   %article{itemscope: '', itemtype: "http://schema.org/BlogPosting"}
     - if is_blog_article?
-      %header
+      %header.article-header
         %h1{itemprop: "name headline"}
           = current_article.title
         .meta
           %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
             = current_article.date.strftime('%F')
+          %span
+            &bull;
           %span.tags{itemprop: "keywords"}
             - current_article.tags.each do |tag|
-              = link_to tag, tag_path(tag), rel: "tag", class: "label label-default"
+              = link_to tag, tag_path(tag), rel: "tag"
     .article_body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?
