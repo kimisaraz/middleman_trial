@@ -42,6 +42,8 @@
                 = link_to "#{year} (#{articles.size})", blog_year_path(year)
     %footer.blog-footer{role: "contentinfo"}
       .container
+        .text-right
+          = link_to "Back to top", "#"
         Copyright &copy; 2014 -
         = link_to "kimisaraz", "https://github.com/kimisaraz"
 
