@@ -220,7 +220,7 @@ td, th { padding: 0; }
   .navbar { display: none; }
   .table td, .article_body table td, .table th, .article_body table th { background-color: #fff !important; }
   .btn > .caret, .dropup > .btn > .caret { border-top-color: #000 !important; }
-  .label, .article-header .meta .tags a { border: 1px solid #000; }
+  .label { border: 1px solid #000; }
   .table, .article_body table { border-collapse: collapse !important; }
   .table-bordered th, .article_body table th, .table-bordered td, .article_body table td { border: 1px solid #ddd !important; } }
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -254,13 +254,13 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
-h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #999999; }
+h1 small, h1 .small, h1 .article-header .meta .delimiter, .article-header .meta h1 .delimiter, h2 small, h2 .small, h2 .article-header .meta .delimiter, .article-header .meta h2 .delimiter, h3 small, h3 .small, h3 .article-header .meta .delimiter, .article-header .meta h3 .delimiter, h4 small, h4 .small, h4 .article-header .meta .delimiter, .article-header .meta h4 .delimiter, h5 small, h5 .small, h5 .article-header .meta .delimiter, .article-header .meta h5 .delimiter, h6 small, h6 .small, h6 .article-header .meta .delimiter, .article-header .meta h6 .delimiter, .h1 small, .h1 .small, .h1 .article-header .meta .delimiter, .article-header .meta .h1 .delimiter, .h2 small, .h2 .small, .h2 .article-header .meta .delimiter, .article-header .meta .h2 .delimiter, .h3 small, .h3 .small, .h3 .article-header .meta .delimiter, .article-header .meta .h3 .delimiter, .h4 small, .h4 .small, .h4 .article-header .meta .delimiter, .article-header .meta .h4 .delimiter, .h5 small, .h5 .small, .h5 .article-header .meta .delimiter, .article-header .meta .h5 .delimiter, .h6 small, .h6 .small, .h6 .article-header .meta .delimiter, .article-header .meta .h6 .delimiter { font-weight: normal; line-height: 1; color: #999999; }
 
 h1, .h1, h2, .h2, h3, .h3 { margin-top: 20px; margin-bottom: 10px; }
-h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small { font-size: 65%; }
+h1 small, h1 .small, h1 .article-header .meta .delimiter, .article-header .meta h1 .delimiter, .h1 small, .h1 .small, .h1 .article-header .meta .delimiter, .article-header .meta .h1 .delimiter, h2 small, h2 .small, h2 .article-header .meta .delimiter, .article-header .meta h2 .delimiter, .h2 small, .h2 .small, .h2 .article-header .meta .delimiter, .article-header .meta .h2 .delimiter, h3 small, h3 .small, h3 .article-header .meta .delimiter, .article-header .meta h3 .delimiter, .h3 small, .h3 .small, .h3 .article-header .meta .delimiter, .article-header .meta .h3 .delimiter { font-size: 65%; }
 
 h4, .h4, h5, .h5, h6, .h6 { margin-top: 10px; margin-bottom: 10px; }
-h4 small, h4 .small, .h4 small, .h4 .small, h5 small, h5 .small, .h5 small, .h5 .small, h6 small, h6 .small, .h6 small, .h6 .small { font-size: 75%; }
+h4 small, h4 .small, h4 .article-header .meta .delimiter, .article-header .meta h4 .delimiter, .h4 small, .h4 .small, .h4 .article-header .meta .delimiter, .article-header .meta .h4 .delimiter, h5 small, h5 .small, h5 .article-header .meta .delimiter, .article-header .meta h5 .delimiter, .h5 small, .h5 .small, .h5 .article-header .meta .delimiter, .article-header .meta .h5 .delimiter, h6 small, h6 .small, h6 .article-header .meta .delimiter, .article-header .meta h6 .delimiter, .h6 small, .h6 .small, .h6 .article-header .meta .delimiter, .article-header .meta .h6 .delimiter { font-size: 75%; }
 
 h1, .h1 { font-size: 36px; }
 
@@ -279,7 +279,7 @@ p { margin: 0 0 10px; }
 .lead { margin-bottom: 20px; font-size: 16px; font-weight: 200; line-height: 1.4; }
 @media (min-width: 768px) { .lead { font-size: 21px; } }
 
-small, .small { font-size: 85%; }
+small, .small, .article-header .meta .delimiter { font-size: 85%; }
 
 cite { font-style: normal; }
 
@@ -363,12 +363,12 @@ abbr[title], abbr[data-original-title] { cursor: help; border-bottom: 1px dotted
 
 blockquote { padding: 10px 20px; margin: 0 0 20px; font-size: 17.5px; border-left: 5px solid #eeeeee; }
 blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child { margin-bottom: 0; }
-blockquote footer, blockquote small, blockquote .small { display: block; font-size: 80%; line-height: 1.42857; color: #999999; }
-blockquote footer:before, blockquote small:before, blockquote .small:before { content: '\2014 \00A0'; }
+blockquote footer, blockquote small, blockquote .small, blockquote .article-header .meta .delimiter, .article-header .meta blockquote .delimiter { display: block; font-size: 80%; line-height: 1.42857; color: #999999; }
+blockquote footer:before, blockquote small:before, blockquote .small:before, blockquote .article-header .meta .delimiter:before, .article-header .meta blockquote .delimiter:before { content: '\2014 \00A0'; }
 
 .blockquote-reverse, blockquote.pull-right { padding-right: 15px; padding-left: 0; border-right: 5px solid #eeeeee; border-left: 0; text-align: right; }
-.blockquote-reverse footer:before, .blockquote-reverse small:before, .blockquote-reverse .small:before, blockquote.pull-right footer:before, blockquote.pull-right small:before, blockquote.pull-right .small:before { content: ''; }
-.blockquote-reverse footer:after, .blockquote-reverse small:after, .blockquote-reverse .small:after, blockquote.pull-right footer:after, blockquote.pull-right small:after, blockquote.pull-right .small:after { content: '\00A0 \2014'; }
+.blockquote-reverse footer:before, .blockquote-reverse small:before, .blockquote-reverse .small:before, .blockquote-reverse .article-header .meta .delimiter:before, .article-header .meta .blockquote-reverse .delimiter:before, blockquote.pull-right footer:before, blockquote.pull-right small:before, blockquote.pull-right .small:before, blockquote.pull-right .article-header .meta .delimiter:before, .article-header .meta blockquote.pull-right .delimiter:before { content: ''; }
+.blockquote-reverse footer:after, .blockquote-reverse small:after, .blockquote-reverse .small:after, .blockquote-reverse .article-header .meta .delimiter:after, .article-header .meta .blockquote-reverse .delimiter:after, blockquote.pull-right footer:after, blockquote.pull-right small:after, blockquote.pull-right .small:after, blockquote.pull-right .article-header .meta .delimiter:after, .article-header .meta blockquote.pull-right .delimiter:after { content: '\00A0 \2014'; }
 
 blockquote:before, blockquote:after { content: ""; }
 
@@ -1621,13 +1621,13 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .pager .previous > a, .pager .previous > span { float: left; }
 .pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span { color: #999999; background-color: white; cursor: not-allowed; }
 
-.label, .article-header .meta .tags a { display: inline; padding: .2em .6em .3em; font-size: 75%; font-weight: bold; line-height: 1; color: white; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
-.label[href]:hover, .article-header .meta .tags a[href]:hover, .label[href]:focus, .article-header .meta .tags a[href]:focus { color: white; text-decoration: none; cursor: pointer; }
-.label:empty, .article-header .meta .tags a:empty { display: none; }
-.btn .label, .btn .article-header .meta .tags a, .article-header .meta .tags .btn a { position: relative; top: -1px; }
+.label { display: inline; padding: .2em .6em .3em; font-size: 75%; font-weight: bold; line-height: 1; color: white; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
+.label[href]:hover, .label[href]:focus { color: white; text-decoration: none; cursor: pointer; }
+.label:empty { display: none; }
+.btn .label { position: relative; top: -1px; }
 
-.label-default, .article-header .meta .tags a { background-color: #999999; }
-.label-default[href]:hover, .article-header .meta .tags a[href]:hover, .label-default[href]:focus, .article-header .meta .tags a[href]:focus { background-color: gray; }
+.label-default { background-color: #999999; }
+.label-default[href]:hover, .label-default[href]:focus { background-color: gray; }
 
 .label-primary { background-color: #428bca; }
 .label-primary[href]:hover, .label-primary[href]:focus { background-color: #3071a9; }
@@ -2856,3 +2856,12 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .blog-footer { margin-top: 60px; padding-top: 30px; padding-bottom: 30px; border-top: 1px solid #eeeeee; }
 
 .article-header { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eeeeee; }
+.article-header .meta .delimiter { padding: 0 5px; }
+
+/* .article-footer { */
+/*   margin-top: $line-height-computed * 3; */
+/*   padding-top: $padding-large-vertical; */
+/*   // padding-bottom: $padding-large-vertical * 3; */
+/*   border-top: 1px solid $gray-lighter; */
+/*   @extend .text-muted; */
+/* } */
