@@ -7,11 +7,10 @@
         .meta
           %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
             = current_article.date.strftime('%F')
-          %span
+          %span.delimiter
             &bull;
           %span.tags{itemprop: "keywords"}
-            - current_article.tags.each do |tag|
-              = link_to tag, tag_path(tag), rel: "tag"
+            = current_article.tags.map { |tag| link_to tag, tag_path(tag), rel: "tag" }.join(", ")
     .article_body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?

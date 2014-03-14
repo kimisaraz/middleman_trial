@@ -4,11 +4,9 @@
   border-bottom: 1px solid $gray-lighter;
   .meta {
     @extend .text-muted;
-    .tags {
-      a {
-        @extend .label;
-        @extend .label-default;
-      }
+    .delimiter {
+      padding: 0 $padding-xs-horizontal;
+      @extend .small;
     }
   }
 }
