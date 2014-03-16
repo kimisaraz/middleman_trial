@@ -6,7 +6,7 @@
           = current_article.title
         .meta
           %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
-            = current_article.date.strftime('%F')
+            = current_article.date.strftime('%B %d, %Y')
           %span.delimiter
             &bull;
           %span.tags{itemprop: "keywords"}
