@@ -10,7 +10,7 @@
           %span.delimiter
             &bull;
           %span.tags{itemprop: "keywords"}
-            = current_article.tags.map { |tag| link_to tag, tag_path(tag), rel: "tag" }.join(", ")
+            = current_article.tags.map {|tag| link_to tag, tag_path(tag), rel: "tag" }.join(", ")
     .article_body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?
