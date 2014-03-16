@@ -23,23 +23,30 @@
       .row
         #main.col-md-9{role: "main"}
           = yield
-        %aside.col-md-3{role: "complementary"}
-          %h2 Recent Articles
-          %ol.list-unstyled
-            - blog.articles[0...10].each do |article|
-              %li
-                = link_to article.title, article
-                %span= article.date.strftime('%b %e')
-          %h2 Tags
-          %ol.list-inline
-            - blog.tags.each do |tag, articles|
-              %li
-                = link_to "#{tag} (#{articles.size})", tag_path(tag)
-          %h2 By Year
-          %ol.list-unstyled
-            - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-              %li
-                = link_to "#{year} (#{articles.size})", blog_year_path(year)
+        %aside.blog-aside.col-md-3{role: "complementary"}
+          %section.recent-articles
+            %h2
+              Recent Articles
+            %ol
+              - blog.articles[0...10].each do |article|
+                %li
+                  = link_to article.title, article
+                  %time{datetime: "#{article.date.xmlschema}"}
+                    = article.date.strftime('%b %d')
+          %section.tags
+            %h2
+              Tags
+            %ol
+              - blog.tags.each do |tag, articles|
+                %li
+                  = link_to "#{tag} (#{articles.size})", tag_path(tag)
+          %section.archives
+            %h2
+              By Year
+            %ol
+              - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+                %li
+                  = link_to "#{year} (#{articles.size})", blog_year_path(year)
     %footer.blog-footer{role: "contentinfo"}
       .container
         .text-right

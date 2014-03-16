@@ -15,6 +15,34 @@
   }
 }
 
+.blog-aside {
+  h2 {
+    @extend .h4;
+    // margin-top: 10px;
+    color: $gray;
+  }
+  .recent-articles {
+    ol {
+      @extend .list-unstyled;
+    }
+    time {
+      @extend .text-muted;
+      @extend .small;
+      font-style: italic;
+    }
+  }
+  .tags {
+    ol {
+      @extend .list-inline;
+    }
+  }
+  .archives {
+    ol {
+      @extend .list-unstyled;
+    }
+  }
+}
+
 .blog-footer {
   margin-top: $line-height-computed * 3;
   padding-top: $padding-large-vertical * 3;
