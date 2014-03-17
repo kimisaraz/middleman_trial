@@ -16,10 +16,10 @@
 }
 
 .blog-aside {
+  color: $gray;
   h2 {
     @extend .h4;
     // margin-top: 10px;
-    color: $gray;
   }
   .recent-articles {
     ol {
