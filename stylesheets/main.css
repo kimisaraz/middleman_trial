@@ -2853,7 +2853,8 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .blog-header a { color: white; }
 .blog-header a:hover, .blog-header a:focus { text-decoration: none; }
 
-.blog-aside h2 { color: #555555; }
+.blog-aside { color: #555555; }
+.blog-aside h2 { margin-top: 20px; }
 .blog-aside .recent-articles time { font-style: italic; }
 
 .blog-footer { margin-top: 60px; padding-top: 30px; padding-bottom: 30px; border-top: 1px solid #eeeeee; }
