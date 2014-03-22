@@ -55,9 +55,6 @@
   @extend .text-muted;
 }
 
-.blog-archives {
-  @extend .list-unstyled;
-}
 .blog-archives-item {
   time {
     @extend %date-published-sub;
