@@ -14,13 +14,13 @@
     .article_body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?
-      %footer
-        %nav
+      %nav
+        %ul.pager
           - previous_article = current_article.previous_article
           - if previous_article
-            .previous_article
-              = link_to "&laquo; #{previous_article.title}", previous_article, rel: "prev"
+            %li.previous
+              = link_to "&larr; #{previous_article.title}", previous_article, rel: "prev"
           - next_article = current_article.next_article
           - if next_article
-            .next_article
-              = link_to "#{next_article.title} &raquo;", next_article, rel: "next"
+            %li.next
+              = link_to "#{next_article.title} &rarr;", next_article, rel: "next"
