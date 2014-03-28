@@ -19,7 +19,8 @@ per_page: 10
           = article.tags.map {|tag| link_to tag, tag_path(tag), rel: "tag" }.join(", ")
     .article_body
       = article.summary
-    = link_to 'Read more…', article, rel: "bookmark", class: "btn btn-link"
+    %footer
+      = link_to 'Read more…', article, rel: "bookmark", class: "btn btn-link"
 - if paginate
   %nav
     %ul.pager
