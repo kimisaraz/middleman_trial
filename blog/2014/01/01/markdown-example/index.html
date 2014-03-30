@@ -17,32 +17,32 @@ Middleman Trial - Markdown Example
 <body>
 <header class='blog-header' role='banner'>
 <div class='container'>
-<h1>
+<h1 class='blog-header__title'>
 <a rel="home" href="/middleman_trial/">Middleman Trial</a>
 </h1>
 </div>
 </header>
 <div class='container'>
 <div class='row'>
-<div class='col-md-9' id='main' role='main'>
-<article itemscope='' itemtype='http://schema.org/BlogPosting'>
+<main class='blog-main col-md-9' role='main'>
+<article class='article' itemscope='' itemtype='http://schema.org/BlogPosting'>
 <header class='article-header'>
-<h1 itemprop='name headline'>
+<h1 class='article-header__title' itemprop='name headline'>
 Markdown Example
 </h1>
-<div class='meta'>
-<time datetime='2014-01-01T10:47:00+09:00' itemprop='datePublished'>
+<div class='article-meta'>
+<time class='article-meta__date-published' datetime='2014-01-01T10:47:00+09:00' itemprop='datePublished'>
 January 01, 2014
 </time>
-<span class='delimiter'>
+<span class='article-meta__delimiter'>
 &bull;
 </span>
-<span class='tags' itemprop='keywords'>
-<a rel="tag" href="/middleman_trial/blog/tags/example/">example</a>, <a rel="tag" href="/middleman_trial/blog/tags/markdown/">markdown</a>
+<span class='article-meta__tags' itemprop='keywords'>
+<a rel="tag" class="article-meta__tag" href="/middleman_trial/blog/tags/example/">example</a>, <a rel="tag" class="article-meta__tag" href="/middleman_trial/blog/tags/markdown/">markdown</a>
 </span>
 </div>
 </header>
-<div class='article_body' itemprop='articleBody'>
+<div class='article-body' itemprop='articleBody'>
 <p>An article for confirmation of Markdown processing.</p>
 
 
@@ -218,44 +218,44 @@ end
 </nav>
 </article>
 
-</div>
+</main>
 <aside class='blog-aside col-md-3' role='complementary'>
-<section class='recent-articles'>
-<h2>
+<section class='archive--recent-article'>
+<h2 class='archive--recent-article__title'>
 Recent Articles
 </h2>
-<ol>
-<li>
+<ol class='archive--recent-article__list'>
+<li class='archive--recent-article__item'>
 <a href="/middleman_trial/blog/2014/01/01/markdown-example/">Markdown Example</a>
 <time datetime='2014-01-01T10:47:00+09:00'>
 Jan 01
 </time>
 </li>
-<li>
+<li class='archive--recent-article__item'>
 <a href="/middleman_trial/blog/2013/12/30/dummy/">Dummy</a>
 <time datetime='2013-12-30T09:23:00+09:00'>
 Dec 30
 </time>
 </li>
-<li>
+<li class='archive--recent-article__item'>
 <a href="/middleman_trial/blog/2013/12/29/lorem-ipsum/">Lorem Ipsum</a>
 <time datetime='2013-12-29T18:18:00+09:00'>
 Dec 29
 </time>
 </li>
-<li>
+<li class='archive--recent-article__item'>
 <a href="/middleman_trial/blog/2013/12/29/tokyo-time-zone/">Tokyo Time Zone</a>
 <time datetime='2013-12-29T04:42:00+09:00'>
 Dec 29
 </time>
 </li>
-<li>
+<li class='archive--recent-article__item'>
 <a href="/middleman_trial/blog/2013/12/29/my-first-post/">My First Post</a>
 <time datetime='2013-12-29T04:07:00+09:00'>
 Dec 29
 </time>
 </li>
-<li>
+<li class='archive--recent-article__item'>
 <a href="/middleman_trial/blog/2012/01/01/example-article/">Example Article</a>
 <time datetime='2012-01-01T00:00:00+09:00'>
 Jan 01
@@ -263,37 +263,37 @@ Jan 01
 </li>
 </ol>
 </section>
-<section class='tags'>
-<h2>
+<section class='archive--tag'>
+<h2 class='archive--tag__title'>
 Tags
 </h2>
-<ol>
-<li>
+<ol class='archive--tag__list'>
+<li class='archive--tag__item'>
 <a href="/middleman_trial/blog/tags/example/">example (2)</a>
 </li>
-<li>
+<li class='archive--tag__item'>
 <a href="/middleman_trial/blog/tags/dummy/">dummy (2)</a>
 </li>
-<li>
+<li class='archive--tag__item'>
 <a href="/middleman_trial/blog/tags/hello/">hello (2)</a>
 </li>
-<li>
+<li class='archive--tag__item'>
 <a href="/middleman_trial/blog/tags/markdown/">markdown (1)</a>
 </li>
 </ol>
 </section>
-<section class='archives'>
-<h2>
+<section class='archive--calendar'>
+<h2 class='archive--calendar__title'>
 By Year
 </h2>
-<ol>
-<li>
+<ol class='archive--calendar__list'>
+<li class='archive--calendar__item'>
 <a href="/middleman_trial/blog/2014/">2014 (1)</a>
 </li>
-<li>
+<li class='archive--calendar__item'>
 <a href="/middleman_trial/blog/2013/">2013 (4)</a>
 </li>
-<li>
+<li class='archive--calendar__item'>
 <a href="/middleman_trial/blog/2012/">2012 (1)</a>
 </li>
 </ol>
@@ -306,8 +306,10 @@ By Year
 <div class='text-right'>
 <a href="#">Back to top</a>
 </div>
+<div class='copyright'>
 Copyright &copy; 2014 -
 <a href="https://github.com/kimisaraz">kimisaraz</a>
+</div>
 </div>
 </footer>
 </body>
