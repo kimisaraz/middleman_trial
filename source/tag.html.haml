@@ -3,24 +3,26 @@ layout: layout
 pageable: true
 per_page: 12
 ---
-%header.article-header
-  %h1
-    Articles tagged '#{tagname}'
-- if paginate && num_pages > 1
-  %p
-    Page #{page_number} of #{num_pages}
-%ul.blog-archives
-  - page_articles.each_with_index do |article, i|
-    %li.blog-archives-item
-      = link_to article.title, article
-      %time{datetime: "#{article.date.xmlschema}"}
-        = article.date.strftime('%b %d, %Y')
-- if paginate
-  %nav
-    %ul.pager
-      - if prev_page
-        %li.previous
-          = link_to '&larr; Previous page', prev_page, rel: "prev"
-      - if next_page
-        %li.next
-          = link_to 'Next page &rarr;', next_page, rel: "next"
+%article.article
+  %header.article-header
+    %h1.article-header__title
+      Articles tagged '#{tagname}'
+  - if paginate && num_pages > 1
+    %p.page-number
+      Page #{page_number} of #{num_pages}
+  .article-body.archive
+    %ul.archive__list
+      - page_articles.each_with_index do |article, i|
+        %li.archive__item
+          = link_to article.title, article
+          %time.archive__date-published{datetime: "#{article.date.xmlschema}"}
+            = article.date.strftime('%b %d, %Y')
+  - if paginate
+    %nav
+      %ul.pager
+        - if prev_page
+          %li.previous
+            = link_to '&larr; Previous page', prev_page, rel: "prev"
+        - if next_page
+          %li.next
+            = link_to 'Next page &rarr;', next_page, rel: "next"

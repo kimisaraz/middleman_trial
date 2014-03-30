@@ -1,17 +1,17 @@
 - wrap_layout :layout do
-  %article{itemscope: '', itemtype: "http://schema.org/BlogPosting"}
+  %article.article{itemscope: '', itemtype: "http://schema.org/BlogPosting"}
     - if is_blog_article?
       %header.article-header
-        %h1{itemprop: "name headline"}
+        %h1.article-header__title{itemprop: "name headline"}
           = current_article.title
-        .meta
-          %time{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
+        .article-meta
+          %time.article-meta__date-published{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
             = current_article.date.strftime('%B %d, %Y')
-          %span.delimiter
+          %span.article-meta__delimiter
             &bull;
-          %span.tags{itemprop: "keywords"}
-            = current_article.tags.map {|tag| link_to tag, tag_path(tag), rel: "tag" }.join(", ")
-    .article_body{itemprop: "articleBody"}
+          %span.article-meta__tags{itemprop: "keywords"}
+            = current_article.tags.map {|tag| link_to tag, tag_path(tag), rel: "tag", class: "article-meta__tag"}.join(", ")
+    .article-body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?
       %nav

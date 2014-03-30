@@ -17,42 +17,43 @@
   %body
     %header.blog-header{role: "banner"}
       .container
-        %h1
+        %h1.blog-header__title
           = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
     .container
       .row
-        #main.col-md-9{role: "main"}
+        %main.blog-main.col-md-9{role: "main"}
           = yield
         %aside.blog-aside.col-md-3{role: "complementary"}
-          %section.recent-articles
-            %h2
+          %section.archive--recent-article
+            %h2.archive--recent-article__title
               Recent Articles
-            %ol
+            %ol.archive--recent-article__list
               - blog.articles[0...10].each do |article|
-                %li
+                %li.archive--recent-article__item
                   = link_to article.title, article
-                  %time{datetime: "#{article.date.xmlschema}"}
+                  %time.archive--recent-article__date-published{datetime: "#{article.date.xmlschema}"}
                     = article.date.strftime('%b %d')
-          %section.tags
-            %h2
+          %section.archive--tag
+            %h2.archive--tag__title
               Tags
-            %ol
+            %ol.archive--tag__list
               - blog.tags.each do |tag, articles|
-                %li
+                %li.archive--tag__item
                   = link_to "#{tag} (#{articles.size})", tag_path(tag)
-          %section.archives
-            %h2
+          %section.archive--calendar
+            %h2.archive--calendar__title
               By Year
-            %ol
-              - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-                %li
+            %ol.archive--calendar__list
+              - blog.articles.group_by {|a| a.date.year}.each do |year, articles|
+                %li.archive--calendar__item
                   = link_to "#{year} (#{articles.size})", blog_year_path(year)
     %footer.blog-footer{role: "contentinfo"}
       .container
         .text-right
           = link_to "Back to top", "#"
-        Copyright &copy; 2014 -
-        = link_to "kimisaraz", "https://github.com/kimisaraz"
+        .copyright
+          Copyright &copy; 2014 -
+          = link_to "kimisaraz", "https://github.com/kimisaraz"
 
     -# jQuery (necessary for Bootstrap's JavaScript plugins)
     -# = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"

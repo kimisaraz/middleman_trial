@@ -2,16 +2,16 @@
   margin-bottom: $line-height-computed;
   padding-bottom: $padding-large-vertical;
   border-bottom: 1px solid $gray-lighter;
-  .meta {
+  .article-meta {
     @extend .text-muted;
-    .delimiter {
+    .article-meta__delimiter {
       padding: 0 $padding-xs-horizontal;
       @extend .small;
     }
   }
 }
 
-.article_body {
+.article-body {
   table {
     @extend .table;
     @extend .table-bordered;

@@ -27,7 +27,7 @@
     @extend .h4;
     margin-top: 20px;
   }
-  .recent-articles {
+  .archive--recent-article {
     ol {
       @extend .list-unstyled;
     }
@@ -35,12 +35,12 @@
       @extend %date-published-sub;
     }
   }
-  .tags {
+  .archive--tag {
     ol {
       @extend .list-inline;
     }
   }
-  .archives {
+  .archive--calendar {
     ol {
       @extend .list-unstyled;
     }
@@ -55,7 +55,7 @@
   @extend .text-muted;
 }
 
-.blog-archives-item {
+.archive__item {
   time {
     @extend %date-published-sub;
   }
