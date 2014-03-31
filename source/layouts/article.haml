@@ -14,7 +14,7 @@
     .article-body{itemprop: "articleBody"}
       = yield
     - if is_blog_article?
-      %nav
+      %footer.article-footer
         %ul.pager
           - previous_article = current_article.previous_article
           - if previous_article

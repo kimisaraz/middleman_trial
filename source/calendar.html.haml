@@ -23,8 +23,8 @@ pageable: true
           = link_to article.title, article
           %time.archive__date-published{datetime: "#{article.date.xmlschema}"}
             = article.date.strftime('%b %d')
-  - if paginate
-    %nav
+  %footer.article-footer
+    - if paginate
       %ul.pager
         - if prev_page
           %li.previous
