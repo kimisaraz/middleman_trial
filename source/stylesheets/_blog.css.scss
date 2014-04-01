@@ -4,47 +4,19 @@
   padding-bottom: $padding-large-vertical;
   @include gradient-vertical(darken($brand-primary, 25%), darken($brand-primary, 15%), 0%, 100%);
   color: $component-active-color;
-  h1 {
+  .blog-header__title {
     font-size: floor($font-size-base * 3.6);
-  }
-  a {
-    color: $component-active-color;
-    &:hover, &:focus {
-      text-decoration: none;
+    >a {
+      color: $component-active-color;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
     }
   }
-}
-
-%date-published-sub {
-  @extend .text-muted;
-  @extend .small;
-  font-style: italic;
 }
 
 .blog-aside {
   color: $gray;
-  h2 {
-    @extend .h4;
-    margin-top: 20px;
-  }
-  .archive--recent-article {
-    ol {
-      @extend .list-unstyled;
-    }
-    time {
-      @extend %date-published-sub;
-    }
-  }
-  .archive--tag {
-    ol {
-      @extend .list-inline;
-    }
-  }
-  .archive--calendar {
-    ol {
-      @extend .list-unstyled;
-    }
-  }
 }
 
 .blog-footer {
@@ -55,8 +27,49 @@
   @extend .text-muted;
 }
 
-.archive__item {
-  time {
+%date-published-sub {
+  @extend .text-muted;
+  @extend .small;
+  font-style: italic;
+}
+
+%archive__title {
+  @extend .h4;
+  margin-top: 20px;
+}
+%archive__list {
+  @extend .list-unstyled;
+}
+
+.archive--recent-article {
+  .archive--recent-article__title {
+    @extend %archive__title;
+  }
+  .archive--recent-article__list {
+    @extend %archive__list;
+  }
+  .archive--recent-article__date-published {
     @extend %date-published-sub;
   }
+}
+.archive--tag {
+  .archive--tag__title {
+    @extend %archive__title;
+  }
+  .archive--tag__list {
+    @extend %archive__list;
+    @extend .list-inline;
+  }
+}
+.archive--calendar {
+  .archive--calendar__title {
+    @extend %archive__title;
+  }
+  .archive--calendar__list {
+    @extend %archive__list;
+  }
+}
+
+.archive__date-published {
+  @extend %date-published-sub;
 }
