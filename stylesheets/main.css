@@ -897,7 +897,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .collapsing { position: relative; height: 0; overflow: hidden; -webkit-transition: height 0.35s ease; transition: height 0.35s ease; }
 
-@font-face { font-family: 'Glyphicons Halflings'; src: url("/middleman_trial/blog/fonts/bootstrap/glyphicons-halflings-regular.eot"); src: url("/middleman_trial/blog/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/middleman_trial/blog/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/middleman_trial/blog/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/middleman_trial/blog/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.eot"); src: url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
