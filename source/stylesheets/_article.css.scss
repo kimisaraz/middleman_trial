@@ -16,11 +16,9 @@
     @extend .table;
     @extend .table-bordered;
     @extend .table-striped;
-    // @extend .table-condensed;
   }
   img {
     @extend .img-thumbnail;
-    // @extend .img-responsive;
   }
   $article-body-heading-top-level: 2;
   h#{$article-body-heading-top-level} {
