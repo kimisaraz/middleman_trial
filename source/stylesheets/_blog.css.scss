@@ -73,3 +73,31 @@
 .archive__date-published {
   @extend %date-published-sub;
 }
+
+.article-header {
+  margin-bottom: $line-height-computed;
+  padding-bottom: $padding-large-vertical;
+  border-bottom: 1px solid $gray-lighter;
+  .article-meta {
+    @extend .text-muted;
+    .article-meta__delimiter {
+      padding: 0 $padding-xs-horizontal;
+      @extend .small;
+    }
+  }
+}
+
+.article-body {
+  table {
+    @extend .table;
+    @extend .table-bordered;
+    @extend .table-striped;
+  }
+  img {
+    @extend .img-thumbnail;
+  }
+  $article-body-heading-top-level: 2;
+  h#{$article-body-heading-top-level} {
+    @extend .page-header;
+  }
+}
