@@ -101,3 +101,11 @@
     @extend .page-header;
   }
 }
+
+.more-link {
+  @extend .btn;
+  @extend .btn-primary;
+  color: $brand-primary;
+  border-color: $brand-primary;
+  background-color: transparent;
+}
