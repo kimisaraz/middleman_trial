@@ -23,7 +23,7 @@
   margin-top: $line-height-computed * 3;
   padding-top: $padding-large-vertical * 3;
   padding-bottom: $padding-large-vertical * 3;
-  border-top: 1px solid $gray-lighter;
+  border-top: 1px solid #dddddd;
   @extend .text-muted;
 }
 
@@ -77,7 +77,7 @@
 .article-header {
   margin-bottom: $line-height-computed;
   padding-bottom: $padding-large-vertical;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid #dddddd;
   .article-meta {
     @extend .text-muted;
     .article-meta__delimiter {
