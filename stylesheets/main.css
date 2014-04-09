@@ -2864,4 +2864,6 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .article-header { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #dddddd; }
 .article-header .article-meta .article-meta__delimiter { padding: 0 5px; }
 
+.article { margin-bottom: 60px; }
+
 .more-link { color: #428bca; border-color: #428bca; background-color: transparent; }
