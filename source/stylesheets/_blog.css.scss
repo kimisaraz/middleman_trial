@@ -96,8 +96,7 @@
   img {
     @extend .img-thumbnail;
   }
-  $article-body-heading-top-level: 2;
-  h#{$article-body-heading-top-level} {
+  h#{$article-body__heading--first-level} {
     @extend .page-header;
   }
 }
