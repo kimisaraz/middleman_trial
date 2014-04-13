@@ -27,20 +27,6 @@
   @extend .text-muted;
 }
 
-%date-published-sub {
-  @extend .text-muted;
-  @extend .small;
-  font-style: italic;
-}
-
-%archive__title {
-  @extend .h4;
-  margin-top: 20px;
-}
-%archive__list {
-  @extend .list-unstyled;
-}
-
 .archive--recent-article {
   .archive--recent-article__title {
     @extend %archive__title;
