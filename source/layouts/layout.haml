@@ -24,28 +24,28 @@
         %main.blog-main.col-md-9{role: "main"}
           = yield
         %aside.blog-aside.col-md-3{role: "complementary"}
-          %section.archive--recent-article
-            %h2.archive--recent-article__title
+          %section.nav--recent-article
+            %h2.nav--recent-article__title
               Recent Articles
-            %ol.archive--recent-article__list
+            %ol.nav--recent-article__list
               - blog.articles[0...10].each do |article|
-                %li.archive--recent-article__item
+                %li.nav--recent-article__item
                   = link_to article.title, article
-                  %time.archive--recent-article__date-published{datetime: "#{article.date.xmlschema}"}
+                  %time.nav--recent-article__date-published{datetime: "#{article.date.xmlschema}"}
                     = article.date.strftime('%b %d')
-          %section.archive--tag
-            %h2.archive--tag__title
+          %section.nav--tag
+            %h2.nav--tag__title
               Tags
-            %ol.archive--tag__list
+            %ol.nav--tag__list
               - blog.tags.each do |tag, articles|
-                %li.archive--tag__item
+                %li.nav--tag__item
                   = link_to "#{tag} (#{articles.size})", tag_path(tag)
-          %section.archive--calendar
-            %h2.archive--calendar__title
+          %section.nav--calendar
+            %h2.nav--calendar__title
               By Year
-            %ol.archive--calendar__list
+            %ol.nav--calendar__list
               - blog.articles.group_by {|a| a.date.year}.each do |year, articles|
-                %li.archive--calendar__item
+                %li.nav--calendar__item
                   = link_to "#{year} (#{articles.size})", blog_year_path(year)
     %footer.blog-footer{role: "contentinfo"}
       .container

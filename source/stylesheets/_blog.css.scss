@@ -27,32 +27,32 @@
   @extend .text-muted;
 }
 
-.archive--recent-article {
-  .archive--recent-article__title {
-    @extend %archive__title;
+.nav--recent-article {
+  .nav--recent-article__title {
+    @extend %nav__title;
   }
-  .archive--recent-article__list {
-    @extend %archive__list;
+  .nav--recent-article__list {
+    @extend %nav__list;
   }
-  .archive--recent-article__date-published {
+  .nav--recent-article__date-published {
     @extend %date-published-sub;
   }
 }
-.archive--tag {
-  .archive--tag__title {
-    @extend %archive__title;
+.nav--tag {
+  .nav--tag__title {
+    @extend %nav__title;
   }
-  .archive--tag__list {
-    @extend %archive__list;
+  .nav--tag__list {
+    @extend %nav__list;
     @extend .list-inline;
   }
 }
-.archive--calendar {
-  .archive--calendar__title {
-    @extend %archive__title;
+.nav--calendar {
+  .nav--calendar__title {
+    @extend %nav__title;
   }
-  .archive--calendar__list {
-    @extend %archive__list;
+  .nav--calendar__list {
+    @extend %nav__list;
   }
 }
 
