@@ -35,7 +35,7 @@
     @extend %nav__list;
   }
   .nav--recent-article__date-published {
-    @extend %date-published-sub;
+    @extend %date-published--sub;
   }
 }
 .nav--tag {
@@ -57,7 +57,7 @@
 }
 
 .archive__date-published {
-  @extend %date-published-sub;
+  @extend %date-published--sub;
 }
 
 .article-header {
