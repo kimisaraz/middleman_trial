@@ -64,12 +64,13 @@
   margin-bottom: $line-height-computed;
   padding-bottom: $padding-large-vertical;
   border-bottom: 1px solid #dddddd;
-  .article-meta {
-    @extend .text-muted;
-    .article-meta__delimiter {
-      padding: 0 $padding-xs-horizontal;
-      @extend .small;
-    }
+}
+
+.article-meta {
+  @extend .text-muted;
+  .article-meta__delimiter {
+    padding: 0 $padding-xs-horizontal;
+    @extend .small;
   }
 }
 
