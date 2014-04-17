@@ -5,7 +5,7 @@
         %h1.article-header__title{itemprop: "name headline"}
           = current_article.title
         .article-meta
-          %time.article-meta__date-published{datetime: "#{current_article.date.xmlschema}", itemprop: "datePublished"}
+          %time.article-meta__date-published{datetime: current_article.date.iso8601, itemprop: "datePublished"}
             = current_article.date.strftime('%B %d, %Y')
           %span.article-meta__delimiter
             &bull;

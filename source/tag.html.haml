@@ -15,7 +15,7 @@ per_page: 12
       - page_articles.each_with_index do |article, i|
         %li.archive__item
           = link_to article.title, article
-          %time.archive__date-published{datetime: "#{article.date.xmlschema}"}
+          %time.archive__date-published{datetime: article.date.iso8601}
             = article.date.strftime('%b %d, %Y')
   %footer.article-footer
     - if paginate

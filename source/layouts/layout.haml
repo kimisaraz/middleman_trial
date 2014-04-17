@@ -31,7 +31,7 @@
               - blog.articles[0...10].each do |article|
                 %li.nav--recent-article__item
                   = link_to article.title, article
-                  %time.nav--recent-article__date-published{datetime: "#{article.date.xmlschema}"}
+                  %time.nav--recent-article__date-published{datetime: article.date.iso8601}
                     = article.date.strftime('%b %d')
           %section.nav--tag
             %h2.nav--tag__title
