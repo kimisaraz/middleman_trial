@@ -5,7 +5,7 @@
     %meta{content: "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title
-      Middleman Trial#{' - ' + current_article.title unless current_article.nil?}
+      #{current_article.title + ' - ' unless current_article.nil?} Middleman Trial
     = feed_tag :atom, File.join(config.http_prefix, "feed.xml"), title: "Atom Feed"
     = stylesheet_link_tag "main"
 
