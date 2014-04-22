@@ -1,4 +1,9 @@
 @charset "utf-8";
 
+@import "vendor/bootstrap-sass";
 @import "syntax";
 @import "font-awesome";
+
+@import "variables";
+@import "placeholders";
+@import "blog";

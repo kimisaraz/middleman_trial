@@ -1,35 +1,60 @@
 !!!
-%html
+%html{lang: "en"}
   %head
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title
-      Middleman Trial#{' - ' + current_article.title unless current_article.nil?}
+      #{current_article.title + ' - ' unless current_article.nil?} Middleman Trial
     = feed_tag :atom, File.join(config.http_prefix, "feed.xml"), title: "Atom Feed"
     = stylesheet_link_tag "main"
+
+    -# HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    -# WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      = javascript_include_tag "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+      = javascript_include_tag "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
   %body
-    %header{role: "banner"}
-      %h1
-        = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
-    #main{role: "main"}
-      = yield
-    %aside{role: "complementary"}
-      %h2 Recent Articles
-      %ol
-        - blog.articles[0...10].each do |article|
-          %li
-            = link_to article.title, article
-            %span= article.date.strftime('%b %e')
-      %h2 Tags
-      %ol
-        - blog.tags.each do |tag, articles|
-          %li
-            = link_to "#{tag} (#{articles.size})", tag_path(tag)
-      %h2 By Year
-      %ol
-        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-          %li
-            = link_to "#{year} (#{articles.size})", blog_year_path(year)
-    %footer{role: "contentinfo"}
-      Copyright &copy; 2014 -
-      = link_to "kimisaraz", "https://github.com/kimisaraz"
+    %header.blog-header{role: "banner"}
+      .container
+        %h1.blog-header__title
+          = link_to "Middleman Trial", File.join("/", config.http_prefix), rel: "home"
+    .container
+      .row
+        %main.blog-main.col-md-9{role: "main"}
+          = yield
+        %aside.blog-aside.col-md-3{role: "complementary"}
+          %section.nav--recent-article
+            %h2.nav--recent-article__title
+              Recent Articles
+            %ol.nav--recent-article__list
+              - blog.articles[0...10].each do |article|
+                %li.nav--recent-article__item
+                  = link_to article.title, article
+                  %time.nav--recent-article__date-published{datetime: article.date.iso8601}
+                    = article.date.strftime('%b %d')
+          %section.nav--tag
+            %h2.nav--tag__title
+              Tags
+            %ol.nav--tag__list
+              - blog.tags.each do |tag, articles|
+                %li.nav--tag__item
+                  = link_to "#{tag} (#{articles.size})", tag_path(tag)
+          %section.nav--calendar
+            %h2.nav--calendar__title
+              By Year
+            %ol.nav--calendar__list
+              - blog.articles.group_by {|a| a.date.year}.each do |year, articles|
+                %li.nav--calendar__item
+                  = link_to "#{year} (#{articles.size})", blog_year_path(year)
+    %footer.blog-footer{role: "contentinfo"}
+      .container
+        .text-right
+          = link_to "Back to top", "#"
+        .copyright
+          Copyright &copy; 2014 -
+          = link_to "kimisaraz", "https://github.com/kimisaraz"
+
+    -# jQuery (necessary for Bootstrap's JavaScript plugins)
+    -# = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    -# = javascript_include_tag "main"

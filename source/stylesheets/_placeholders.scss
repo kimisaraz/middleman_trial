@@ -1,0 +1,14 @@
+%nav__title {
+  @extend .h4;
+  margin-top: 20px;
+}
+
+%nav__list {
+  @extend .list-unstyled;
+}
+
+%date-published--sub {
+  @extend .text-muted;
+  @extend .small;
+  font-style: italic;
+}

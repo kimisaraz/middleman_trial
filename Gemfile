@@ -17,6 +17,9 @@ gem "nokogiri"
 # For GitHub Flavored Markdown (GFM)
 gem "redcarpet"
 
+# Front-end framework
+gem "bootstrap-sass", :require => false
+
 # To provide the Font Awesome as a Middleman engine
 gem "font-awesome-middleman"
 
