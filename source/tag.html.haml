@@ -6,7 +6,7 @@ per_page: 12
 %article.article
   %header.article-header
     %h1.article-header__title
-      Articles tagged '#{tagname}'
+      Articles tagged &lsquo;#{tagname}&rsquo;
   - if paginate && num_pages > 1
     %p.page-number
       Page #{page_number} of #{num_pages}
