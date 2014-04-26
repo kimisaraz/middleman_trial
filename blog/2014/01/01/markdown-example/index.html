@@ -47,7 +47,7 @@ January 01, 2014
 
 
 
-<h2 id="toc_0">Texts</h2>
+<h2 id="texts">Texts</h2>
 
 <p>&ldquo;Lorem ipsum&rdquo; dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="footnotes_example">^1</a></p>
 
@@ -55,7 +55,7 @@ January 01, 2014
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h2 id="toc_1">Lists</h2>
+<h2 id="lists">Lists</h2>
 
 <ol>
 <li>Item</li>
@@ -81,7 +81,7 @@ newline and indent</li>
 newline</li>
 </ul>
 
-<h2 id="toc_2">Links</h2>
+<h2 id="links">Links</h2>
 
 <ul>
 <li>Inline link: <a href="http://kimisaraz.github.io/middleman_trial/">Middleman Trial</a></li>
@@ -91,31 +91,31 @@ newline</li>
 <li>Wiki link: [[WikiLink]]</li>
 </ul>
 
-<h2 id="toc_3">Tables</h2>
+<h2 id="tables">Tables</h2>
 
 <p>Normal table</p>
 
 <table><thead>
 <tr>
-<th align="left">left-align</th>
-<th align="center">center-align</th>
-<th align="right">right-align</th>
+<th style="text-align: left">left-align</th>
+<th style="text-align: center">center-align</th>
+<th style="text-align: right">right-align</th>
 </tr>
 </thead><tbody>
 <tr>
-<td align="left">1111</td>
-<td align="center">2222</td>
-<td align="right">3333</td>
+<td style="text-align: left">1111</td>
+<td style="text-align: center">2222</td>
+<td style="text-align: right">3333</td>
 </tr>
 <tr>
-<td align="left">4444</td>
-<td align="center">5555</td>
-<td align="right">6666</td>
+<td style="text-align: left">4444</td>
+<td style="text-align: center">5555</td>
+<td style="text-align: right">6666</td>
 </tr>
 <tr>
-<td align="left">7777</td>
-<td align="center">8888</td>
-<td align="right">9999</td>
+<td style="text-align: left">7777</td>
+<td style="text-align: center">8888</td>
+<td style="text-align: right">9999</td>
 </tr>
 </tbody></table>
 
@@ -145,7 +145,7 @@ newline</li>
 </tr>
 </tbody></table>
 
-<h2 id="toc_4">Styles</h2>
+<h2 id="styles">Styles</h2>
 
 <ul>
 <li>normal</li>
@@ -159,7 +159,7 @@ newline</li>
 <li>superscript 2^(nd)</li>
 </ul>
 
-<h3 id="toc_5">Blockquotes</h3>
+<h3 id="blockquotes">Blockquotes</h3>
 
 <blockquote>
 <p>blockquote
@@ -167,7 +167,7 @@ blockquote
 blockquote</p>
 </blockquote>
 
-<h3 id="toc_6">Images</h3>
+<h3 id="images">Images</h3>
 
 <p><img title="Middleman logo" alt="Inline image syntax with optional title" src="/middleman_trial/images/middleman.png" />
 <img title="Middleman logo" alt="Reference-style image syntax" src="/middleman_trial/images/middleman.png" />
@@ -176,27 +176,30 @@ blockquote</p>
 
 <p><img title="Wide Image" alt="Wide image" src="/middleman_trial/images/emacs-scratch.png" /></p>
 
-<h3 id="toc_7">Code Blocks</h3>
+<h3 id="code-blocks">Code Blocks</h3>
 <pre class="highlight ruby"><span class="c1"># Code blocks delimited with "```"</span>
 <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">"Hello, </span><span class="si">#{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
-</pre><pre class="highlight ruby"><span class="c1"># Code blocks delimited with "~~~" style</span>
+</pre>
+<pre class="highlight ruby"><span class="c1"># Code blocks delimited with "~~~" style</span>
 <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">"Hello, </span><span class="si">#{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
-</pre><pre class="highlight plaintext"># Code blocks indented with 4 spaces
+</pre>
+<pre class="highlight plaintext"># Code blocks indented with 4 spaces
 def hello(message)
   puts "Hello, #{message}"
 end
 </pre>
+
 <hr>
 
-<h2 id="toc_8">Non Space Header</h2>
+<h2 id="non-space-header">Non Space Header</h2>
 
 <p>There is no space between the hash at the beginning of a header above and its name.</p>
 
-<h2 id="toc_9">Lax Spacing</h2>
+<h2 id="lax-spacing">Lax Spacing</h2>
 
 <p>Text without empty line after.</p>
 
