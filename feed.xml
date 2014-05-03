@@ -7,7 +7,7 @@
   <link href="http://kimisaraz.github.io/middleman_trial/feed.xml" rel="self"/>
   <updated>2014-01-01T01:47:00Z</updated>
   <author>
-    <name>Kimi SARAZU</name>
+    <name>kimisaraz</name>
   </author>
   <entry>
     <title>Markdown Example</title>
@@ -16,7 +16,7 @@
     <published>2014-01-01T01:47:00Z</published>
     <updated>2014-04-25T00:03:01+09:00</updated>
     <author>
-      <name>Kimi SARAZU</name>
+      <name>kimisaraz</name>
     </author>
     <content type="html">&lt;p&gt;An article for confirmation of Markdown processing.&lt;/p&gt;
 
@@ -194,7 +194,7 @@ end
     <published>2013-12-30T00:23:00Z</published>
     <updated>2014-03-22T06:21:50+09:00</updated>
     <author>
-      <name>Kimi SARAZU</name>
+      <name>kimisaraz</name>
     </author>
     <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 
@@ -212,7 +212,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     <published>2013-12-29T09:18:00Z</published>
     <updated>2014-03-23T01:06:13+09:00</updated>
     <author>
-      <name>Kimi SARAZU</name>
+      <name>kimisaraz</name>
     </author>
     <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 
@@ -230,7 +230,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     <published>2013-12-28T19:42:00Z</published>
     <updated>2014-01-01T01:10:43+09:00</updated>
     <author>
-      <name>Kimi SARAZU</name>
+      <name>kimisaraz</name>
     </author>
     <content type="html">&lt;p&gt;Hello, Tokyo!&lt;/p&gt;
 </content>
@@ -242,7 +242,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     <published>2013-12-28T19:07:00Z</published>
     <updated>2014-01-01T01:10:43+09:00</updated>
     <author>
-      <name>Kimi SARAZU</name>
+      <name>kimisaraz</name>
     </author>
     <content type="html">&lt;p&gt;Hello, world!&lt;/p&gt;
 </content>
@@ -254,7 +254,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     <published>2011-12-31T15:00:00Z</published>
     <updated>2014-01-01T01:10:43+09:00</updated>
     <author>
-      <name>Kimi SARAZU</name>
+      <name>kimisaraz</name>
     </author>
     <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
 </content>
