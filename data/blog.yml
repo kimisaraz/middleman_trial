@@ -8,3 +8,13 @@ subtitle: Building a blog with Middleman
 lang: en
 charset: utf-8
 year: 2014
+readmore: Read more…
+back_to_top: Back to top
+prev_sign: '&larr;'
+next_sign: '&rarr;'
+prev_page: Previous page
+next_page: Next page
+time:
+  formats:
+    normal: ! '%B %d, %Y'
+    short: ! '%b %d'

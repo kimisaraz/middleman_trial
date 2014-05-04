@@ -16,13 +16,13 @@ per_page: 12
         %li.archive__item
           = link_to article.title, article
           %time.archive__date-published{datetime: article.date.iso8601}
-            = article.date.strftime('%b %d, %Y')
+            = article.date.strftime(data.blog.time.formats.normal)
   %footer.article-footer
     - if paginate
       %ul.pager
         - if prev_page
           %li.previous
-            = link_to '&larr; Previous page', prev_page, rel: "prev"
+            = link_to "#{data.blog.prev_sign} #{data.blog.prev_page}", prev_page, rel: "prev"
         - if next_page
           %li.next
-            = link_to 'Next page &rarr;', next_page, rel: "next"
+            = link_to "#{data.blog.next_page} #{data.blog.next_sign}", next_page, rel: "next"

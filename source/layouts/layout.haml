@@ -32,7 +32,7 @@
                 %li.nav--recent-article__item
                   = link_to article.title, article
                   %time.nav--recent-article__date-published{datetime: article.date.iso8601}
-                    = article.date.strftime('%b %d')
+                    = article.date.strftime(data.blog.time.formats.short)
           %section.nav--tag
             %h2.nav--tag__title
               Tags
@@ -50,7 +50,7 @@
     %footer.blog-footer{role: "contentinfo"}
       .container
         .text-right
-          = link_to "Back to top", "#"
+          = link_to data.blog.back_to_top, "#"
         .copyright
           Copyright &copy; #{data.blog.year} -
           = link_to data.blog.author.name, data.blog.author.url
