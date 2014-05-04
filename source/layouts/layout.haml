@@ -1,11 +1,11 @@
 !!!
-%html{lang: data.site.blog.lang}
+%html{lang: data.blog.lang}
   %head
-    %meta{charset: data.site.blog.charset}
+    %meta{charset: data.blog.charset}
     %meta{content: "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title
-      #{current_article.title + ' - ' unless current_article.nil?} #{data.site.blog.title}
+      #{current_article.title + ' - ' unless current_article.nil?} #{data.blog.title}
     = feed_tag :atom, File.join(config.http_prefix, "feed.xml"), title: "Atom Feed"
     = stylesheet_link_tag "main"
 
@@ -18,7 +18,7 @@
     %header.blog-header{role: "banner"}
       .container
         %h1.blog-header__title
-          = link_to data.site.blog.title, File.join("/", config.http_prefix), rel: "home"
+          = link_to data.blog.title, File.join("/", config.http_prefix), rel: "home"
     .container
       .row
         %main.blog-main.col-md-9{role: "main"}
@@ -52,8 +52,8 @@
         .text-right
           = link_to "Back to top", "#"
         .copyright
-          Copyright &copy; #{data.site.blog.year} -
-          = link_to data.site.author.name, data.site.author.url
+          Copyright &copy; #{data.blog.year} -
+          = link_to data.blog.author.name, data.blog.author.url
 
     -# jQuery (necessary for Bootstrap's JavaScript plugins)
     -# = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
