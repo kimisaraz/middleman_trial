@@ -16,5 +16,5 @@ prev_page: Previous page
 next_page: Next page
 time:
   formats:
-    normal: ! '%B %d, %Y'
+    normal: ! '%b %d, %Y'
     short: ! '%b %d'
