@@ -6,7 +6,7 @@
           = current_article.title
         .article-meta
           %time.article-meta__date-published{datetime: current_article.date.iso8601, title: current_article.date.iso8601, itemprop: "datePublished"}
-            = current_article.date.strftime('%B %d, %Y')
+            = current_article.date.strftime(data.blog.time.formats.normal)
           %span.article-meta__delimiter
             &bull;
           %span.article-meta__tags{itemprop: "keywords"}
@@ -19,8 +19,8 @@
           - previous_article = current_article.previous_article
           - if previous_article
             %li.previous
-              = link_to "&larr; #{previous_article.title}", previous_article, rel: "prev"
+              = link_to "#{data.blog.prev_sign} #{previous_article.title}", previous_article, rel: "prev"
           - next_article = current_article.next_article
           - if next_article
             %li.next
-              = link_to "#{next_article.title} &rarr;", next_article, rel: "next"
+              = link_to "#{next_article.title} #{data.blog.next_sign}", next_article, rel: "next"

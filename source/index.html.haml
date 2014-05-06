@@ -13,7 +13,7 @@ per_page: 10
           = link_to article.title, article, rel: "bookmark"
         .article-meta
           %time.article-meta__date-published{datetime: article.date.iso8601, title: article.date.iso8601}
-            = article.date.strftime('%B %d, %Y')
+            = article.date.strftime(data.blog.time.formats.normal)
           %span.article-meta__delimiter
             &bull;
           %span.article-meta__tags
@@ -21,13 +21,13 @@ per_page: 10
       .article-body
         = article.summary
       %footer.article-footer
-        = link_to 'Read more…', article, rel: "bookmark", class: "more-link"
+        = link_to data.blog.readmore, article, rel: "bookmark", class: "more-link"
 %footer.index-footer
   - if paginate
     %ul.pager
       - if prev_page
         %li.previous
-          = link_to '&larr; Previous page', prev_page, rel: "prev"
+          = link_to "#{data.blog.prev_sign} #{data.blog.prev_page}", prev_page, rel: "prev"
       - if next_page
         %li.next
-          = link_to 'Next page &rarr;', next_page, rel: "next"
+          = link_to "#{data.blog.next_page} #{data.blog.next_sign}", next_page, rel: "next"
