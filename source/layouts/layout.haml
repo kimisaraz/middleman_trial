@@ -6,7 +6,7 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title
       #{current_article.title + ' - ' unless current_article.nil?} #{data.blog.title}
-    = feed_tag :atom, File.join(config.http_prefix, "feed.xml"), title: "Atom Feed"
+    = feed_tag :atom, File.join(config.http_prefix, blog.options.prefix, "feed.xml"), title: "Atom Feed"
     = stylesheet_link_tag "main"
 
     -# HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -18,7 +18,7 @@
     %header.blog-header{role: "banner"}
       .container
         %h1.blog-header__title
-          = link_to data.blog.title, File.join("/", config.http_prefix), rel: "home"
+          = link_to data.blog.title, File.join("/", config.http_prefix, blog.options.prefix), rel: "home"
     .container
       .row
         %main.blog-main.col-md-9{role: "main"}
