@@ -20,16 +20,16 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
+  blog.tag_template = File.join(blog.prefix, 'tag.html')
+  blog.calendar_template = File.join(blog.prefix, 'calendar.html')
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
-end
 
-page "blog/feed.xml", layout: false
+  page File.join(blog.prefix, 'feed.xml'), layout: false
+end
 
 ###
 # Compass
