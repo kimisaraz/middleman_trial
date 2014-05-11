@@ -12,7 +12,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  blog.layout = "article"
+  # blog.layout = "layout"
   blog.summary_separator = /(<!-- READMORE -->)/
   blog.summary_length = 350
   # blog.year_link = "{year}.html"
@@ -28,7 +28,9 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.page_link = "page/{num}"
 
+  page File.join(blog.prefix, '*'), layout: :blog
   page File.join(blog.prefix, 'feed.xml'), layout: false
+  page File.join(blog.prefix, 'articles', '*'), layout: :article
 end
 
 ###
