@@ -10,7 +10,7 @@ activate :blog do |blog|
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
   # blog.layout = "layout"
   blog.summary_separator = /(<!-- READMORE -->)/
@@ -20,16 +20,18 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+  blog.tag_template = File.join(blog.prefix, 'tag.html')
+  blog.calendar_template = File.join(blog.prefix, 'calendar.html')
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
-end
 
-page "/feed.xml", layout: false
+  page File.join(blog.prefix, '*'), layout: :blog
+  page File.join(blog.prefix, 'feed.xml'), layout: false
+  page File.join(blog.prefix, 'articles', '*'), layout: :article
+end
 
 ###
 # Compass
@@ -57,8 +59,6 @@ end
 # with_layout :admin do
 #   page "/admin/*"
 # end
-
-page "/blog/*", :layout => :article
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
