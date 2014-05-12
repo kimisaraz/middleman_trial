@@ -97,7 +97,7 @@ td, th { padding: 0; }
   .label { border: 1px solid #000; }
   .table, .article-body table { border-collapse: collapse !important; }
   .table-bordered th, .article-body table th, .table-bordered td, .article-body table td { border: 1px solid #ddd !important; } }
-@font-face { font-family: 'Glyphicons Halflings'; src: url("/fonts/bootstrap/glyphicons-halflings-regular.eot"); src: url("/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.eot"); src: url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/middleman_trial/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -2104,7 +2104,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH -------------------------- */
-@font-face { font-family: 'FontAwesome'; src: url("/fonts/fontawesome-webfont.eot?v=4.0.3"); src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'FontAwesome'; src: url("/middleman_trial/fonts/fontawesome-webfont.eot?v=4.0.3"); src: url("/middleman_trial/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("/middleman_trial/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("/middleman_trial/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("/middleman_trial/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 
 .fa { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
