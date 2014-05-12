@@ -3,8 +3,8 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   site_url = data.blog.base_url
   xml.title data.blog.title
   xml.subtitle data.blog.subtitle
-  xml.id File.join(site_url, config.http_prefix, blog.options.prefix)
-  xml.link "href" => File.join(site_url, config.http_prefix, blog.options.prefix)
+  xml.id File.join(site_url, config.http_prefix, blog.options.prefix.to_s)
+  xml.link "href" => File.join(site_url, config.http_prefix, blog.options.prefix.to_s)
   xml.link "href" => File.join(site_url, config.http_prefix, current_page.path), "rel" => "self"
   xml.updated(blog.articles.first.date.to_time.iso8601) unless blog.articles.empty?
   xml.author { xml.name data.blog.author.name }
