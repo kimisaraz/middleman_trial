@@ -20,17 +20,17 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-  blog.tag_template = File.join(blog.prefix, 'tag.html')
-  blog.calendar_template = File.join(blog.prefix, 'calendar.html')
+  blog.tag_template = File.join(blog.prefix.to_s, 'tag.html')
+  blog.calendar_template = File.join(blog.prefix.to_s, 'calendar.html')
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
 
-  page File.join(blog.prefix, '*'), layout: :blog
-  page File.join(blog.prefix, 'feed.xml'), layout: false
-  page File.join(blog.prefix, 'articles', '*'), layout: :article
+  page File.join(blog.prefix.to_s, '*'), layout: :blog
+  page File.join(blog.prefix.to_s, 'feed.xml'), layout: false
+  page File.join(blog.prefix.to_s, 'articles', '*'), layout: :article
 end
 
 ###
