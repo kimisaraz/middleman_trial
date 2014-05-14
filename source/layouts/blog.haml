@@ -18,7 +18,7 @@
     %header.blog-header{role: "banner"}
       .container
         %h1.blog-header__title
-          = link_to data.blog.title, File.join("/", config.http_prefix, blog.options.prefix.to_s), rel: "home"
+          = link_to data.blog.title, File.join(config.http_prefix, blog.options.prefix.to_s), rel: "home"
     .container
       .row
         %main.blog-main.col-md-9{role: "main"}
