@@ -3,13 +3,13 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~> 3.2.0"
-gem "middleman-blog", "~> 3.5.1"
+gem "middleman-blog"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "middleman-deploy"
 
 # For feed.xml.builder
-gem "builder", "~> 3.0"
+gem "builder"
 
 # For article summaries
 gem "nokogiri"
