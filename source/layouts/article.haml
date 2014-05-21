@@ -10,7 +10,7 @@
           %span.article-meta__delimiter
             &bull;
           %span.article-meta__tags{itemprop: "keywords"}
-            - if current_article.tags.size > 0
+            - unless current_article.tags.empty?
               = current_article.tags.map {|tag| link_to tag, tag_path(tag), rel: "tag", class: "article-meta__tag"}.join(", ")
             - else
               = data.blog.untagged
