@@ -13,8 +13,8 @@ back_to_top: Back to top
 untagged: Untagged
 prev_sign: '&larr;'
 next_sign: '&rarr;'
-prev_page: Previous page
-next_page: Next page
+prev_page: '&larr; Previous page'
+next_page: 'Next page &rarr;'
 time:
   formats:
     normal: ! '%b %d, %Y'
