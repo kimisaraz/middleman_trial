@@ -147,10 +147,10 @@ set :markdown, {
   with_toc_data: true, # Add HTML anchors to each header in the output HTML
   highlight: true, # Parse ==highlights==
   underline: true, # Parse _underscored emphasis_ as underlines
+  footnotes: true, # Parse footnotes, PHP-Markdown style
   smartypants: true, # Enable SmartyPants, see http://daringfireball.net/projects/smartypants/
   # Other extensions
   # hard_wrap: true, # Treat newlines in paragraphs as real line breaks
-  # footnotes: true, # Parse footnotes, PHP-Markdown style
   # disable_indented_code_blocks: true, # Do not parse usual markdown code blocks
   # space_after_headers: true, # A space is always required between the hash and a header name
   # superscript: true, # Parse superscripts after the ^ character
