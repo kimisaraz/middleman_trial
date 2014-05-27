@@ -44,7 +44,7 @@
             %h2.nav--calendar__title
               By Year
             %ol.nav--calendar__list
-              - blog.articles.group_by {|a| a.date.year}.each do |year, articles|
+              - blog.articles.group_by { |a| a.date.year }.each do |year, articles|
                 %li.nav--calendar__item
                   = link_to "#{year} (#{articles.size})", blog_year_path(year)
     %footer.blog-footer{role: "contentinfo"}

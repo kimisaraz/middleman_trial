@@ -11,7 +11,7 @@
             &bull;
           %span.article-meta__tags{itemprop: "keywords"}
             - unless current_article.tags.empty?
-              = current_article.tags.map {|tag| link_to tag, tag_path(tag), rel: "tag", class: "article-meta__tag"}.join(", ")
+              = current_article.tags.map { |tag| link_to tag, tag_path(tag), rel: "tag", class: "article-meta__tag" }.join(", ")
             - else
               = data.blog.untagged
     .article-body{itemprop: "articleBody"}
