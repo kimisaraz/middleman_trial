@@ -3069,3 +3069,5 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .article { margin-bottom: 60px; }
 
 .more-link { color: #428bca; border-color: #428bca; background-color: transparent; }
+
+.article-body .highlight { background-color: #222222; }
