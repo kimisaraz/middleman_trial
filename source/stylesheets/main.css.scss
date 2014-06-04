@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "before/bootstrap-sass/variables";
+@import "before";
 
 @import "vendor";
 
@@ -8,4 +8,4 @@
 @import "placeholders";
 @import "blog";
 
-@import "after/syntax";
+@import "after";
