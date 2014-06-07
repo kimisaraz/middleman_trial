@@ -1,11 +1,6 @@
 @charset "utf-8";
 
 @import "before";
-
 @import "vendor";
-
-@import "variables";
-@import "placeholders";
-@import "blog";
-
+@import "blogkit";
 @import "after";
