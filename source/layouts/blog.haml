@@ -7,7 +7,7 @@
     %title
       #{current_article.title + ' - ' unless current_article.nil?} #{data.blog.title}
     = feed_tag :atom, File.join(config.http_prefix, blog.options.prefix.to_s, "feed.xml"), title: "Atom Feed"
-    = stylesheet_link_tag "main"
+    = stylesheet_link_tag "all"
 
     -# HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     -# WARNING: Respond.js doesn't work if you view the page via file://
