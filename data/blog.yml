@@ -11,10 +11,10 @@ year: 2014
 readmore: Read more…
 back_to_top: Back to top
 untagged: Untagged
-prev_sign: '&larr;'
-next_sign: '&rarr;'
-prev_page: '&larr; Previous page'
-next_page: 'Next page &rarr;'
+prev_sign: '<span class="glyphicon glyphicon-arrow-left"></span>'
+next_sign: '<span class="glyphicon glyphicon-arrow-right"></span>'
+prev_page: '<span class="glyphicon glyphicon-arrow-left"></span> Previous page'
+next_page: 'Next page <span class="glyphicon glyphicon-arrow-right"></span>'
 time:
   formats:
     normal: ! '%b %d, %Y'
