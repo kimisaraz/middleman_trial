@@ -152,21 +152,21 @@ blockquote&lt;/p&gt;
 &lt;p&gt;&lt;img title="Wide Image" alt="Wide image" src="/middleman_trial/images/emacs-scratch.png" /&gt;&lt;/p&gt;
 
 &lt;h3 id="code-blocks"&gt;Code Blocks&lt;/h3&gt;
-&lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with "```"&lt;/span&gt;
+&lt;pre&gt;&lt;code class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with "```"&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Hello, &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
 &lt;span class="k"&gt;end&lt;/span&gt;
-&lt;/pre&gt;
-&lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with "~~~" style&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="highlight ruby"&gt;&lt;span class="c1"&gt;# Code blocks delimited with "~~~" style&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Hello, &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
 &lt;span class="k"&gt;end&lt;/span&gt;
-&lt;/pre&gt;
-&lt;pre class="highlight plaintext"&gt;# Code blocks indented with 4 spaces
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;# Code blocks indented with 4 spaces
 def hello(message)
   puts "Hello, #{message}"
 end
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr&gt;
 
