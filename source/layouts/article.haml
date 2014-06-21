@@ -1,5 +1,5 @@
 - wrap_layout :blog do
-  %article.article{itemscope: '', itemtype: "http://schema.org/BlogPosting"}
+  %article.article{itemscope: true, itemtype: "http://schema.org/BlogPosting"}
     - if is_blog_article?
       %header.article-header
         %h1.article-header__title{itemprop: "name headline"}
