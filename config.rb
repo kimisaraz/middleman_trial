@@ -109,6 +109,7 @@ end
 # Deploy settings
 ###
 
+# https://github.com/karlfreeman/middleman-deploy
 activate :deploy do |deploy|
   # Deploy a site via git
   deploy.method = :git
