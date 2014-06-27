@@ -4,6 +4,7 @@
 
 Time.zone = "Tokyo"
 
+# https://github.com/middleman/middleman-blog
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
@@ -133,7 +134,7 @@ activate :directory_indexes
 # page "/tags/*", :directory_index => false
 
 # Markdown
-# https://github.com/vmg/redcarpet/blob/master/README.markdown
+# https://github.com/vmg/redcarpet
 set :markdown_engine, :redcarpet
 set :markdown, {
   # GFM-like styles
