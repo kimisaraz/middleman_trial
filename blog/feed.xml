@@ -61,8 +61,7 @@ newline&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Tables&lt;/h3&gt;
 &lt;p&gt;Normal table&lt;/p&gt;
-
-&lt;table&gt;&lt;thead&gt;
+&lt;div class='table-wrap'&gt;&lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
 &lt;th style="text-align: left"&gt;left-align&lt;/th&gt;
 &lt;th style="text-align: center"&gt;center-align&lt;/th&gt;
@@ -84,11 +83,9 @@ newline&lt;/li&gt;
 &lt;td style="text-align: center"&gt;8888&lt;/td&gt;
 &lt;td style="text-align: right"&gt;9999&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
+&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
 &lt;p&gt;Wide table&lt;/p&gt;
-
-&lt;table&gt;&lt;thead&gt;
+&lt;div class='table-wrap'&gt;&lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Lorem ipsum dolor sit amet&lt;/th&gt;
 &lt;th&gt;consectetur adipisicing elit&lt;/th&gt;
@@ -110,8 +107,7 @@ newline&lt;/li&gt;
 &lt;td&gt;consectetur adipisicing elit&lt;/td&gt;
 &lt;td&gt;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3&gt;Styles&lt;/h3&gt;
+&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;h3&gt;Styles&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;normal&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;emphasis text with one asterisk&lt;/em&gt;&lt;/li&gt;
