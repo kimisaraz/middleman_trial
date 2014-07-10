@@ -46,13 +46,17 @@ Jan 01, 2014
 <p>An article for confirmation of Markdown processing.</p>
 
 
-<h3>Texts</h3>
+
+<h2 id="texts">Texts</h2>
+
 <p>&ldquo;Lorem ipsum&rdquo; dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
 
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h3>Lists</h3>
+
+<h2 id="lists">Lists</h2>
+
 <ol>
 <li>Item</li>
 <li>Item
@@ -76,7 +80,9 @@ newline and indent</li>
 <li>Item with
 newline</li>
 </ul>
-<h3>Links</h3>
+
+<h2 id="links">Links</h2>
+
 <ul>
 <li>Inline link: <a href="http://kimisaraz.github.io/middleman_trial/">Middleman Trial</a></li>
 <li>Reference link: <a title="Middleman Trial" href="http://kimisaraz.github.io/middleman_trial/">Middleman Trial</a></li>
@@ -84,9 +90,12 @@ newline</li>
 <li>Auto link: <a href="http://kimisaraz.github.io/middleman_trial/">http://kimisaraz.github.io/middleman_trial/</a></li>
 <li>Wiki link: [[WikiLink]]</li>
 </ul>
-<h3>Tables</h3>
+
+<h2 id="tables">Tables</h2>
+
 <p>Normal table</p>
-<div class='table-wrap'><table><thead>
+
+<table><thead>
 <tr>
 <th style="text-align: left">left-align</th>
 <th style="text-align: center">center-align</th>
@@ -108,9 +117,11 @@ newline</li>
 <td style="text-align: center">8888</td>
 <td style="text-align: right">9999</td>
 </tr>
-</tbody></table></div>
+</tbody></table>
+
 <p>Wide table</p>
-<div class='table-wrap'><table><thead>
+
+<table><thead>
 <tr>
 <th>Lorem ipsum dolor sit amet</th>
 <th>consectetur adipisicing elit</th>
@@ -132,7 +143,10 @@ newline</li>
 <td>consectetur adipisicing elit</td>
 <td>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
 </tr>
-</tbody></table></div><h3>Styles</h3>
+</tbody></table>
+
+<h2 id="styles">Styles</h2>
+
 <ul>
 <li>normal</li>
 <li><em>emphasis text with one asterisk</em></li>
@@ -144,20 +158,26 @@ newline</li>
 <li><u>underscored emphasis text</u></li>
 <li>superscript 2^(nd)</li>
 </ul>
-<h4>Blockquotes</h4>
+
+<h3 id="blockquotes">Blockquotes</h3>
+
 <blockquote>
 <p>blockquote
 blockquote
 blockquote</p>
 </blockquote>
-<h4>Images</h4>
+
+<h3 id="images">Images</h3>
+
 <p><img title="Middleman logo" alt="Inline image syntax with optional title" src="/middleman_trial/images/middleman.png" />
 <img title="Middleman logo" alt="Reference-style image syntax" src="/middleman_trial/images/middleman.png" />
 <img alt="Image in subfolder" src="/middleman_trial/images/logos/middleman.png" />
 <a title="Middleman guide" href="http://middlemanapp.com"><img alt="Image with link" src="/middleman_trial/images/middleman.png" /></a></p>
 
 <p><img title="Wide Image" alt="Wide image" src="/middleman_trial/images/emacs-scratch.png" /></p>
-<h4>Code Blocks</h4><pre><code class="highlight ruby"><span class="c1"># Code blocks delimited with "```"</span>
+
+<h3 id="code-blocks">Code Blocks</h3>
+<pre><code class="highlight ruby"><span class="c1"># Code blocks delimited with "```"</span>
 <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">"Hello, </span><span class="si">#{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
@@ -174,9 +194,13 @@ end
 </code></pre>
 
 <hr>
-<h3>Non Space Header</h3>
+
+<h2 id="non-space-header">Non Space Header</h2>
+
 <p>There is no space between the hash at the beginning of a header above and its name.</p>
-<h3>Lax Spacing</h3>
+
+<h2 id="lax-spacing">Lax Spacing</h2>
+
 <p>Text without empty line after.</p>
 
 <div>
