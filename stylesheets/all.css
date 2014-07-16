@@ -2959,91 +2959,101 @@ pre table td { padding: 5px; }
 
 pre table pre { margin: 0; }
 
-pre { color: #faf6e4; background-color: #122b3b; }
+pre, pre .w { color: #bbbbbb; background-color: #000; }
 
-pre .gl { color: #dee5e7; background-color: #4e5d62; }
+pre .c, pre .cd, pre .cm, pre .c1 { color: #888; }
 
-pre .c, pre .cd, pre .cm, pre .c1, pre .cs { color: #6c8b9f; font-style: italic; }
+pre .cp { color: #579; }
 
-pre .cp { color: #b2fd6d; font-weight: bold; font-style: italic; }
+pre .cs { color: #cc0000; font-weight: bold; }
 
-pre .err { color: #fefeec; background-color: #cc0000; }
+pre .k, pre .kc, pre .kd, pre .kn, pre .kr, pre .kv { color: #080; font-weight: bold; }
 
-pre .gr { color: #fefeec; background-color: #cc0000; }
+pre .kp { color: #038; }
 
-pre .k, pre .kd, pre .kv { color: #f6dd62; font-weight: bold; }
+pre .kt { color: #339; }
 
-pre .o, pre .ow { color: #4df4ff; }
+pre .o { color: #333; }
 
-pre .p, pre .pi { color: #4df4ff; }
+pre .ow { color: #000; font-weight: bold; }
 
-pre .gd { color: #cc0000; }
+pre .nb, pre .bp { color: #007020; }
 
-pre .gi { color: #b2fd6d; }
+pre .nf { color: #06B; font-weight: bold; }
+
+pre .nc { color: #B06; font-weight: bold; }
+
+pre .nn { color: #0e84b5; font-weight: bold; }
+
+pre .ne { color: #F00; font-weight: bold; }
+
+pre .nv { color: #963; }
+
+pre .vi { color: #33B; }
+
+pre .vc { color: #369; }
+
+pre .vg { color: #d70; font-weight: bold; }
+
+pre .no { color: #036; font-weight: bold; }
+
+pre .nl { color: #970; font-weight: bold; }
+
+pre .ni { color: #800; font-weight: bold; }
+
+pre .na { color: #00C; }
+
+pre .nt { color: #070; }
+
+pre .nd { color: #555; font-weight: bold; }
+
+pre .s, pre .sb, pre .s2, pre .sh, pre .s1 { background-color: #fff0f0; }
+
+pre .sc { color: #04D; }
+
+pre .sd { color: #D42; }
+
+pre .si { background-color: #eee; }
+
+pre .se { color: #666; font-weight: bold; }
+
+pre .sr { color: #000; background-color: #fff0ff; }
+
+pre .ss { color: #A60; }
+
+pre .sx { color: #D20; }
+
+pre .m, pre .mb, pre .mx { color: #60E; font-weight: bold; }
+
+pre .mi, pre .il { color: #00D; font-weight: bold; }
+
+pre .mf { color: #60E; font-weight: bold; }
+
+pre .mh { color: #058; font-weight: bold; }
+
+pre .mo { color: #40E; font-weight: bold; }
+
+pre .gh { color: #000080; font-weight: bold; }
+
+pre .gu { color: #800080; font-weight: bold; }
+
+pre .gd { color: #A00000; }
+
+pre .gi { color: #00A000; }
+
+pre .gr { color: #FF0000; }
 
 pre .ge { font-style: italic; }
 
 pre .gs { font-weight: bold; }
 
-pre .gt { color: #dee5e7; background-color: #4e5d62; }
+pre .gp { color: #c65d09; font-weight: bold; }
 
-pre .kc { color: #f696db; font-weight: bold; }
+pre .go { color: #888; }
 
-pre .kn { color: #ffb000; font-weight: bold; }
+pre .gt { color: #04D; }
 
-pre .kp { color: #ffb000; font-weight: bold; }
-
-pre .kr { color: #ffb000; font-weight: bold; }
-
-pre .gh { color: #ffb000; font-weight: bold; }
-
-pre .gu { color: #ffb000; font-weight: bold; }
-
-pre .kt { color: #b2fd6d; font-weight: bold; }
-
-pre .no { color: #b2fd6d; font-weight: bold; }
-
-pre .nc { color: #b2fd6d; font-weight: bold; }
-
-pre .nd { color: #b2fd6d; font-weight: bold; }
-
-pre .nn { color: #b2fd6d; font-weight: bold; }
-
-pre .bp { color: #b2fd6d; font-weight: bold; }
-
-pre .ne { color: #b2fd6d; font-weight: bold; }
-
-pre .nl { color: #ffb000; font-weight: bold; }
-
-pre .nt { color: #ffb000; font-weight: bold; }
-
-pre .m, pre .mf, pre .mh, pre .mi, pre .il, pre .mo, pre .mb, pre .mx { color: #f696db; font-weight: bold; }
-
-pre .ld { color: #f696db; font-weight: bold; }
-
-pre .ss { color: #f696db; font-weight: bold; }
-
-pre .s, pre .sb, pre .sd, pre .s2, pre .sh, pre .sx, pre .sr, pre .s1 { color: #fff0a6; font-weight: bold; }
-
-pre .se { color: #4df4ff; font-weight: bold; }
-
-pre .sc { color: #4df4ff; font-weight: bold; }
-
-pre .si { color: #4df4ff; font-weight: bold; }
-
-pre .nb { font-weight: bold; }
-
-pre .ni { color: #999999; font-weight: bold; }
-
-pre .w { color: #BBBBBB; }
-
-pre .nf { color: #a8e1fe; }
-
-pre .py { color: #a8e1fe; }
-
-pre .na { color: #a8e1fe; }
-
-pre .nv, pre .vc, pre .vg, pre .vi { color: #a8e1fe; font-weight: bold; }
+pre .err { color: #F00; background-color: #FAA; }
 
 .nav--recent-article .nav--recent-article__title, .nav--tag .nav--tag__title, .nav--calendar .nav--calendar__title { margin-top: 20px; }
 
