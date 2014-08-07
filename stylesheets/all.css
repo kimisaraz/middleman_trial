@@ -2959,7 +2959,7 @@ pre table td { padding: 5px; }
 
 pre table pre { margin: 0; }
 
-pre, pre .w { color: #586e75; }
+pre, pre .w { color: #f8f8f2; background-color: #272822; }
 
 pre .err { color: #151515; background-color: #ac4142; }
 
