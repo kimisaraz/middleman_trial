@@ -3101,3 +3101,5 @@ pre { color: #f8f8f2; background-color: #49483e; }
 .article { margin-bottom: 60px; }
 
 .more-link { color: #428bca; border-color: #428bca; background-color: transparent; }
+
+.article-body pre { background-color: #222222; }
